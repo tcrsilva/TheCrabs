@@ -26,7 +26,7 @@
       predio:
         one: Building
         other: Buildings
-        nm_predio: Name of building
+        nm_predio: Name of Building
         cd_numero: Number
         cd_bloco: Block
         cd_cep: Zip Code
