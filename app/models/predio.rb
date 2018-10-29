@@ -1,0 +1,2 @@
+class Predio < ApplicationRecord
+end

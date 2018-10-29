@@ -1,0 +1,20 @@
+pt-BR:
+  current_locale: "Português do Brasil"
+  welcome: "Seja Bem-Vindo!"
+  messages: 
+    welcome: "Este é o Crabs, um app para você gerenciar seu condomínio."
+    menu: "Para começar, selecione uma das opções abaixo:"
+    confirm: "Tem certeza?"
+  hello: "Olá Mundo!"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
+    new: "Novo"
+    back: "Voltar"
+  new:
+    predio: "Novo Prédio"
+  editing:
+    predio: "Editar prédio"
+  showing:
+    predio: "Mostrar Prédio"

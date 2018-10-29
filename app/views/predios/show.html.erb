@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<form>
+  
+  
+  <div class="form-group">
+    <%= label_tag nil, @predio.class.human_attribute_name(:nm_predio) %>
+    <%= text_field_tag nil, @predio.nm_predio, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, @predio.class.human_attribute_name(:cd_numero) %>
+    <%= text_field_tag nil, @predio.cd_numero, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, @predio.class.human_attribute_name(:cd_bloco) %>
+    <%= text_field_tag nil,@predio.cd_bloco , class:"form-control", disabled: true %>
+  </div>
+  
+  <div class="form-group">
+    <%= label_tag nil, @predio.class.human_attribute_name(:cd_cep) %>
+    <%= text_field_tag nil, @predio.cd_cep , class:"form-control", disabled: true %>
+  </div>
+  
+  <div class="form-group">
+    <%= label_tag nil, @predio.class.human_attribute_name(:ds_endereco) %>
+    <%= text_field_tag nil, @predio.ds_endereco, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, @predio.class.human_attribute_name(:ds_municipio) %>
+    <%= text_field_tag nil, @predio.ds_municipio, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, @predio.class.human_attribute_name(:ds_regioesSociais) %>
+    <%= text_field_tag nil,@predio.ds_regioesSociais , class:"form-control", disabled: true %>
+  </div>
+  
+  <div class="form-group">
+    <%= label_tag nil, @predio.class.human_attribute_name(:cd_telefone) %>
+    <%= text_field_tag nil, @predio.cd_telefone , class:"form-control", disabled: true %>
+  </div>
+  
+</form>
+  
+
+<%= link_to t('links.edit'), edit_predio_path(@predio), class:"btn btn-primary" %> |
+<%= link_to t('links.back'), predios_path, class:"btn btn-primary" %>

@@ -1,0 +1,8 @@
+<h1><%= t('editing.predio') %></h1>
+
+<%= render 'form', predio: @predio %>
+
+<%= link_to t('links.show'), @predio, class:"btn btn-primary"  %> |
+<%= link_to t('links.back'), predios_path, class:"btn btn-primary"  %>
+
+

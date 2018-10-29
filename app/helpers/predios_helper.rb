@@ -1,0 +1,2 @@
+module PrediosHelper
+end

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= Predio.model_name.human(count: @predios.count) %></h1>
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th><%= @predios.human_attribute_name(:nm_predio) %></th>
+      <th><%= @predios.human_attribute_name(:cd_numero) %></th>
+      <th><%= @predios.human_attribute_name(:cd_bloco) %></th>
+      <th><%= @predios.human_attribute_name(:cd_cep) %></th>
+      <th><%= @predios.human_attribute_name(:ds_endereco) %></th>
+      <th><%= @predios.human_attribute_name(:ds_municipio) %></th>
+      <th><%= @predios.human_attribute_name(:ds_regioesSociais) %></th>
+      <th><%= @predios.human_attribute_name(:cd_telefone) %></th>
+     
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @predios.each do |predio| %>
+      <tr>
+        <td><%= predio.nm_predio %></td>
+        <td><%= predio.cd_numero %></td>
+        <td><%= predio.cd_bloco %></td>
+        <td><%= predio.cd_cep %></td>
+        <td><%= predio.ds_endereco %></td>
+        <td><%= predio.ds_municipio %></td>
+        <td><%= predio.ds_regioesSociais %></td>
+        <td><%= predio.cd_telefone %></td>
+        <td><%= link_to t('links.show'), predio %></td>
+        <td><%= link_to t('links.edit'), edit_predio_path(predio) %></td>
+        <td><%= link_to t('links.delete'), predio, method: :delete, data: { confirm: t('messages.confirm') } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('new.predio'), new_predio_path, class:"btn btn-primary"%>

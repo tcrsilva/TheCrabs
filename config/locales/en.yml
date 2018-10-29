@@ -28,6 +28,29 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 en:
+  current_locale: "English (International)"
+  welcome: "Welcome!"
+  messages:
+    welcome: "This is the APP CRABS to manage your condo."
+    menu: "To start, choose an option below:"
+    confirm: "Are you sure?"
   hello: "Hello world"
+  links:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    new: "New"
+    back: "Back"
+
+  new:
+    predio: "New Bulding"
+  editing:
+    predio: "Edit Bulding"
+  showing:
+    predio: "Show Building"
+ 
+
+
+
+

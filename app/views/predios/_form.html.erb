@@ -1,0 +1,60 @@
+<%= form_with(model: predio, local: true) do |form| %>
+  <% if predio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(predio.errors.count, "error") %> prohibited this predio from being saved:</h2>
+
+      <ul>
+      <% predio.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :nm_predio %>
+    <%= form.text_field :nm_predio, class:"form-control", placeholder:"Enter name" %>
+  </div>
+  
+
+  <div class="form-group">
+    <%= form.label :cd_numero %>
+    <%= form.text_field :cd_numero, class:"form-control", placeholder:"Enter number" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :cd_bloco %>
+    <%= form.text_field :cd_bloco, class:"form-control", placeholder:"Enter block" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :cd_cep %>
+    <%= form.text_field :cd_cep, class:"form-control", placeholder:"Enter zip code" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :ds_endereco %>
+    <%= form.text_field :ds_endereco, class:"form-control", placeholder:"Enter address" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :ds_municipio %>
+    <%= form.text_field :ds_municipio, class:"form-control", placeholder:"Enter county" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :ds_regioesSociais %>
+    <%= form.text_field :ds_regioesSociais, class:"form-control", placeholder:"Enter social regions" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :cd_telefone %>
+    <%= form.text_field :cd_telefone, class:"form-control", placeholder:"Enter telephone" %>
+  </div>
+  
+  <div class="actions">
+    <%= form.submit nil, class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<br>

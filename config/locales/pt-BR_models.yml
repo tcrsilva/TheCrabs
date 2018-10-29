@@ -1,0 +1,40 @@
+'pt-BR':
+  activerecord:
+    models:
+      predio: Prédio
+    attributes:
+      predio:
+        one: Prédio
+        other: Prédios
+        nm_predio: Nome do Prédio
+        cd_numero: Número
+        cd_bloco: Bloco
+        cd_cep: CEP
+        ds_endereco: Endereço
+        ds_municipio: Município
+        ds_regioesSociais: Regiões Sociais
+        cd_telefone: Telefone
+        updated_at: Atualizado em
+        created_at: Criado em
+        
+        
+'en':
+  activerecord:
+    models:
+      predio: Building
+    attributes:
+      predio:
+        one: Building
+        other: Buildings
+        nm_predio: Name of building
+        cd_numero: Number
+        cd_bloco: Block
+        cd_cep: Zip Code
+        ds_endereco: Address
+        ds_municipio: County
+        ds_regioesSociais: Social Regions
+        cd_telefone: Telephone
+        updated_at: Updated
+        created_at: Created
+        
+        
