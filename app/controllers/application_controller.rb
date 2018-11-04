@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
-   before_action :set_locale
+  before_action :set_locale
+  
+  def index
+  end 
   
   def set_locale
     if params[:locale]
