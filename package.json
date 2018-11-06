@@ -1,5 +1,5 @@
 {
-  "name": "projeto",
+  "name": "crabs",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.1.3",
