@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Crabs</title>
+    <title>The Crabs</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -19,15 +19,19 @@
           <%= link_to 'HOME', root_path, class:"nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to 'Português', root_path(locale: 'pt-BR'), class:"nav-link" %>
+          <%= link_to 'PT', root_path(locale: 'pt-BR'), class:"nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to 'English', root_path(locale: 'en'), class:"nav-link" %>
+          <%= link_to 'EN', root_path(locale: 'en'), class:"nav-link" %>
         </li>
       </ul>
       <%= yield %>
     </div>
+<<<<<<< HEAD
    <!--<script>$.notify("Acesso concedido",  "successo");</script>-->
+=======
+   <script>$.notify.addStyle("Acesso Concedido", "success");</script>
+>>>>>>> 4e37bcae42b7e10e0b415656684a4132c2121309
     
   </body>
 </html>

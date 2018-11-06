@@ -12,6 +12,7 @@
         cd_cep: CEP
         ds_endereco: Endereço
         ds_municipio: Município
+        sg_estado: Estado
         ds_regioesSociais: Regiões Sociais
         cd_telefone: Telefone
         updated_at: Atualizado em
@@ -32,6 +33,7 @@
         cd_cep: Zip Code
         ds_endereco: Address
         ds_municipio: County
+        sg_estado: State
         ds_regioesSociais: Social Regions
         cd_telefone: Telephone
         updated_at: Updated

@@ -15,9 +15,12 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( cable.js
                                                   predios.js
                                                   application.js
-                                                  welcome.js )
+                                                  welcome.js 
+                                                  start.js
+)
                                                 
 Rails.application.config.assets.precompile += %w( predios.css
                                                   application.css
                                                   scaffolds.css
-                                                  welcome.css )
+                                                  welcome.css 
+                                                  start.css )

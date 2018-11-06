@@ -7,9 +7,12 @@ class CreatePredios < ActiveRecord::Migration[5.2]
       t.integer :cd_cep
       t.string :ds_endereco
       t.string :ds_municipio
+      t.string :sg_estado
       t.string :ds_regioesSociais
       t.integer :cd_telefone
-
+      t.string :nm_sindico
+      t.integer :cd_sindico
+    
       t.timestamps
     end
   end
