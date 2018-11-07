@@ -13,7 +13,9 @@ class PrediosTest < ApplicationSystemTestCase
   test "creating a Predio" do
     visit predios_url
     click_on "New Predio"
-
+    
+    fill_in "Cd Sindico", with: @predio.cd_sindico
+    fill_in "Nm Sindico", with: @predio.nm_sindico
     fill_in "Cd Bloco", with: @predio.cd_bloco
     fill_in "Cd Cep", with: @predio.cd_cep
     fill_in "Cd Numero", with: @predio.cd_numero
@@ -32,6 +34,8 @@ class PrediosTest < ApplicationSystemTestCase
     visit predios_url
     click_on "Edit", match: :first
 
+    fill_in "Cd Sindico", with: @predio.cd_sindico
+    fill_in "Nm Sindico", with: @predio.nm_sindico
     fill_in "Cd Bloco", with: @predio.cd_bloco
     fill_in "Cd Cep", with: @predio.cd_cep
     fill_in "Cd Numero", with: @predio.cd_numero

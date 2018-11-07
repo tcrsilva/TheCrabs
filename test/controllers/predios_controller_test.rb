@@ -17,7 +17,7 @@ class PrediosControllerTest < ActionDispatch::IntegrationTest
 
   test "should create predio" do
     assert_difference('Predio.count') do
-      post predios_url, params: { predio: { cd_bloco: @predio.cd_bloco, cd_cep: @predio.cd_cep, cd_numero: @predio.cd_numero, cd_telefone: @predio.cd_telefone, ds_endereco: @predio.ds_endereco, ds_municipio: @predio.ds_municipio, ds_regioesSociais: @predio.ds_regioesSociais, nm_predio: @predio.nm_predio } }
+      post predios_url, params: { predio: { cd_sindico: @predio.cd_sindico, nm_sindico: @predio.nm_sindico, cd_bloco: @predio.cd_bloco, cd_cep: @predio.cd_cep, cd_numero: @predio.cd_numero, cd_telefone: @predio.cd_telefone, ds_endereco: @predio.ds_endereco, ds_municipio: @predio.ds_municipio, ds_regioesSociais: @predio.ds_regioesSociais, nm_predio: @predio.nm_predio } }
     end
 
     assert_redirected_to predio_url(Predio.last)
@@ -34,7 +34,7 @@ class PrediosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update predio" do
-    patch predio_url(@predio), params: { predio: { cd_bloco: @predio.cd_bloco, cd_cep: @predio.cd_cep, cd_numero: @predio.cd_numero, cd_telefone: @predio.cd_telefone, ds_endereco: @predio.ds_endereco, ds_municipio: @predio.ds_municipio, ds_regioesSociais: @predio.ds_regioesSociais, nm_predio: @predio.nm_predio } }
+    patch predio_url(@predio), params: { predio: { cd_sindico: @predio.cd_sindico, nm_sindico: @predio.nm_sindico, cd_bloco: @predio.cd_bloco, cd_cep: @predio.cd_cep, cd_numero: @predio.cd_numero, cd_telefone: @predio.cd_telefone, ds_endereco: @predio.ds_endereco, ds_municipio: @predio.ds_municipio, ds_regioesSociais: @predio.ds_regioesSociais, nm_predio: @predio.nm_predio } }
     assert_redirected_to predio_url(@predio)
   end
 
