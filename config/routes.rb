@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'login/useropc'
   get 'start/home'
   get 'welcome/index'
   resources :predios
