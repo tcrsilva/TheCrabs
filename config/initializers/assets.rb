@@ -23,10 +23,6 @@ Rails.application.config.assets.precompile += %w( predios.css
                                                   application.css
                                                   scaffolds.css
                                                   welcome.css 
-<<<<<<< HEAD
-                                                  start.css)
-=======
                                                   start.css
                                                   login.css)
 
->>>>>>> 7a14cb3f51e1d6e85d40be1c77ec6fd38703f8ec
