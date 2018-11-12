@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'login' => "login#login", as: "login"
+  get 'logout' => "login#logout#", as: "logout"
+  post 'auth' => "login#auth", as: "login_auth"
   get 'login/useropc'
   get 'start/home'
   get 'welcome/index'
