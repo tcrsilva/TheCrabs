@@ -1,0 +1,21 @@
+<h1>Cadastro de Usuario</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user, url: usuario_create_path) do |f| %>
+      <%= f.label :nome %>
+      <%= f.text_field :nome %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Criar conta", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
