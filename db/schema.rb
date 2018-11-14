@@ -13,6 +13,8 @@
 ActiveRecord::Schema.define(version: 2018_10_25_210137) do
 
   create_table "predios", force: :cascade do |t|
+    t.integer "cd_sindico"
+    t.string "nm_sindico"
     t.string "nm_predio"
     t.integer "cd_numero"
     t.integer "cd_bloco"
