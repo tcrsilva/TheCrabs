@@ -17,12 +17,15 @@ Rails.application.config.assets.precompile += %w( cable.js
                                                   application.js
                                                   welcome.js 
                                                   start.js
-                                                  login.js )
+                                                  login.js 
+                                                  devise/sessions.js)
                                                 
 Rails.application.config.assets.precompile += %w( predios.css
                                                   application.css
                                                   scaffolds.css
                                                   welcome.css 
                                                   start.css
-                                                  login.css)
+                                                  login.css
+                                                  devise/sessions.css)
+
 
