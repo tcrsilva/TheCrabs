@@ -35,8 +35,13 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'devise'
+
 #Instalação do tradutor
 gem 'rails-i18n', '~> 5.1' 
+
+#Instalação de calendário
+gem 'event-calendar', '~> 2.3', '>= 2.3.3'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', source: 'https://rails-assets.org'

@@ -1,0 +1,18 @@
+<h1>Faça seu login</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(:login, url: login_auth_path) do |f| %>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Login", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<!-- Session
+    Def: pequena informação guardada no servidor de forma a manter o http -->
