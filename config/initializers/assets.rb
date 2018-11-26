@@ -20,7 +20,6 @@ Rails.application.config.assets.precompile += %w( cable.js
                                                   login.js 
                                                   calendar.js
                                                   devise/sessions.js)
-                                                  #26/11/2018 calendar
                                                 
 Rails.application.config.assets.precompile += %w( predios.css
                                                   application.css
