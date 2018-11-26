@@ -1,4 +1,6 @@
 <body class="container" style="text-align:center;">
+    
+    
 
     <%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
     <div style="color: #dc3c28; padding: 0 2% 1%"><h1>THE CRABS</h1></div>
@@ -6,9 +8,22 @@
     <%= link_to 'Síndico', welcome_index_path, class:"btn btn-primary btn-lg" %>
     <!--<#%= link_to 'Morador', welcome_index_path, class:"btn btn-secondary btn-lg" %>-->
     
+   
+    
+    <% if admin_signed_in? %>
+    <ul>
+    <h2><%= current_admin.email %></h2>
     <li><%= link_to "Cadastrar novo Morador", new_profile_registration_path %></li>
-    <li><%= link_to "Logar", new_admin_session_path %></li>
     <li><%= link_to "Sair", destroy_admin_session_path, method: :delete %></li>
+    </ul>
+    
+    <% else %>
+    <ul>
+    
+     <li><%= link_to "Logar", new_admin_session_path %></li>
+    </ul>
+    
+    <% end %>    
     
     </div>
 </body>
