@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   namespace :profiles_backoffice do
     get 'welcome/index'
   end
@@ -17,6 +18,8 @@ Rails.application.routes.draw do
   get 'start/home'
   get 'welcome/index'
   resources :predios
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'start#home'
+  
+   root 'start#home'
 end
