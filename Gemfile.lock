@@ -82,6 +82,7 @@ GEM
       responders
       warden (~> 1.2.3)
     erubi (1.7.1)
+    event-calendar (2.3.3)
     execjs (2.7.0)
     ffi (1.9.25)
     globalid (0.4.1)
@@ -218,6 +219,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  event-calendar (~> 2.3, >= 2.3.3)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (= 0.20.0)
