@@ -13,14 +13,14 @@
     <% if admin_signed_in? %>
     <ul>
     <h2><%= current_admin.email %></h2>
-    <li><%= link_to "Cadastrar novo Morador", new_profile_registration_path %></li>
+    <li><%= link_to "Cadastrar Novo Morador", new_profile_registration_path %></li>
     <li><%= link_to "Sair", destroy_admin_session_path, method: :delete %></li>
     </ul>
     
     <% else %>
     <ul>
     
-     <li><%= link_to "Login", new_admin_session_path %></li>
+     <li><%= link_to "Logar", new_admin_session_path %></li>
     </ul>
     
     <% end %>    
