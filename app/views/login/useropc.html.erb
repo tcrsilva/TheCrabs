@@ -5,7 +5,7 @@
     <%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
     <div style="color: #dc3c28; padding: 0 2% 1%"><h1>THE CRABS</h1></div>
     <h5 style="padding: 1%">Selecione seu tipo de perfil:</h5>
-    <%= link_to 'Síndico', welcome_index_path, class:"btn btn-primary btn-lg" %>
+    <!--<#%= link_to 'Síndico', welcome_index_path, class:"btn btn-primary btn-lg" %>-->
     <!--<#%= link_to 'Morador', welcome_index_path, class:"btn btn-secondary btn-lg" %>-->
     
    
@@ -18,9 +18,8 @@
     </ul>
     
     <% else %>
-    <ul>
-    
-     <li><%= link_to "Logar", new_admin_session_path %></li>
+    <ul class="dec">
+     <li><%= link_to "Síndico", new_admin_session_path, class:"btn btn-primary btn-lg" %></li>
     </ul>
     
     <% end %>    
