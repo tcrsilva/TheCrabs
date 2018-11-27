@@ -1,5 +1,8 @@
 class PrediosController < ApplicationController
   before_action :set_predio, only: [:show, :edit, :update, :destroy]
+  
+  #Só conseguira usar o cadastro de predio se tiver autenticado
+  before_action :authenticate_admin!
 
   # GET /predios
   # GET /predios.json

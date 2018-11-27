@@ -8,6 +8,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
    
+   
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
@@ -27,6 +28,8 @@
       </ul>
       <%= yield %>
     </div>
+   <!--<script>$.notify("Acesso concedido",  "successo");</script>-->
+
    <script>$.notify.addStyle("Acesso Concedido", "success");</script>
     
   </body>
