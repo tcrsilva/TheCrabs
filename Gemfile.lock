@@ -231,11 +231,8 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
-<<<<<<< HEAD
   event-calendar (~> 2.3, >= 2.3.3)
-=======
   fullcalendar-rails (>= 2.1.1)
->>>>>>> 58b01509e04a6a07b97eafe7057cf587149a76cd
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   momentjs-rails
