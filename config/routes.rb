@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get 'login/useropc'
   get 'start/home'
   get 'welcome/index'
-  get 'visitors/index'
+  get 'visitors/calendar'
   resources :predios
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
