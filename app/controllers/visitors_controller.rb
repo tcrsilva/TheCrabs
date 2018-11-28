@@ -1,4 +1,4 @@
-class CalendarController < ApplicationController
+class VisitorsController < ApplicationController
   def calendar
   end
 end
