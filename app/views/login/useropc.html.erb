@@ -21,6 +21,15 @@
     <ul class="dec">
      <li><%= link_to "Síndico", new_admin_session_path, class:"btn btn-primary btn-lg" %></li>
     </ul>
+    <h2><%= current_admin.email %></h2>
+    <p><%= link_to "Cadastrar Novo Morador", new_profile_registration_path %></p>
+    <p><%= link_to "Sair", destroy_admin_session_path, method: :delete %></p>
+
+    
+    <% else %>
+    <div class="dec">
+        <p><%= link_to "Síndico", new_admin_session_path, class:"btn btn-primary btn-lg" %></p>
+    </div>
     
     <% end %>    
     

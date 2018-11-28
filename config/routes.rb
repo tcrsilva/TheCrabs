@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :events
-  
+
   namespace :profiles_backoffice do
     get 'welcome/index'
   end
