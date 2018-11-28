@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+  
+=======
   resources :events
   get 'calendar/schedule'
+>>>>>>> 58b01509e04a6a07b97eafe7057cf587149a76cd
   namespace :profiles_backoffice do
     get 'welcome/index'
   end
@@ -20,6 +24,8 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'calendar/schedule'
   resources :predios
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'start#home'
+  
+   root 'start#home'
 end
