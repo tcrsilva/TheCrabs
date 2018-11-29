@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
   resources :events
   get 'calendar/schedule'
+=======
+  resources :events
+>>>>>>> 7b9cec20081499ba1a2475a3f63e8ec6c669ca18
 
   namespace :profiles_backoffice do
     get 'welcome/index'
@@ -9,8 +13,10 @@ Rails.application.routes.draw do
   namespace :admins_backoffice do
     get 'welcome/index'
   end
+  
   devise_for :profiles
   devise_for :admins
+  
   get 'usuario/new'
   get 'usuario/show/:id' => "usuario#show", as: "usuario_show"
   post 'usuario/create' #post pois vai pro banco
@@ -20,7 +26,7 @@ Rails.application.routes.draw do
   get 'login/useropc'
   get 'start/home'
   get 'welcome/index'
-  get 'calendar/schedule'
+  get 'visitors/calendar'
   resources :predios
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
