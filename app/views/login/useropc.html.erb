@@ -1,37 +1,28 @@
 <body class="container" style="text-align:center;">
     
-    
-
     <%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
     <div style="color: #dc3c28; padding: 0 2% 1%"><h1>THE CRABS</h1></div>
     <h5 style="padding: 1%">Selecione seu tipo de perfil:</h5>
-    <%= link_to 'Predio', welcome_index_path, class:"btn btn-primary btn-lg" %>
+    <!--<#%= link_to 'Predio', welcome_index_path, class:"btn btn-primary btn-lg" %>-->
     <!--<#%= link_to 'Morador', welcome_index_path, class:"btn btn-secondary btn-lg" %>-->
     
    
     <!--Cadastro, sair e logar do devise -->
     <% if admin_signed_in? %>
-    <ul>
-    <h2><%= current_admin.email %></h2>
-    <li><%= link_to "Cadastrar Novo Morador", new_profile_registration_path %></li>
-    <li><%= link_to "Sair", destroy_admin_session_path, method: :delete %></li>
-    </ul>
+       
+            <h2><%= current_admin.try(:email) %></h2>
+            <p><%= link_to "Cadastrar Novo Morador", new_profile_registration_path %></p>
+            <p><%= link_to "Sair", destroy_admin_session_path, method: :delete %></p>
+        
     
-    <% else %>
-    <ul>
-     <li><%= link_to "Síndico", new_admin_session_path, class:"btn btn-primary btn-lg", :class => "dec" %></li>
-    </ul>
-    <h2><%= current_admin.email %></h2>
-    <p><%= link_to "Cadastrar Novo Morador", new_profile_registration_path %></p>
-    <p><%= link_to "Sair", destroy_admin_session_path, method: :delete %></p>
+    <% elsif %>
+       
+         <p><%= link_to "Síndico", new_admin_session_path, class:"btn btn-info" %></p>
+        
 
-    
-    <% else %>
-    <div class="dec">
-        <p><%= link_to "Síndico", new_admin_session_path, class:"btn btn-primary btn-lg" %></p>
-    </div>
-    
+        <h2><%= current_admin.try(:email) %></h2>
+     
+
     <% end %>    
-    
     </div>
 </body>

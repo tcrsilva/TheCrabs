@@ -1,6 +1,3 @@
-json.extract! event, :id, :title, :description, :start_time, :end_time, :created_at, :updated_at
-json.url event_url(event, format: :json)
-
 date_format = event.all_day_event? ? '%Y-%m-%d' : '%Y-%m-%dT%H:%M:%S'
 
 json.id event.id
