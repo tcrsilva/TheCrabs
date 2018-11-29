@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :events
+  resources :predios
 
   namespace :profiles_backoffice do
     get 'welcome/index'
@@ -20,10 +21,8 @@ Rails.application.routes.draw do
   get 'login/useropc'
   get 'start/home'
   get 'welcome/index'
+  get 'events/index/:id' => "events#root"
   get 'visitors/calendar'
-  resources :predios
   
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  
-   root 'start#home'
+  root 'start#home'
 end
