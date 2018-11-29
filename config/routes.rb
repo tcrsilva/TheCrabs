@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+  resources :events
 
   resources :events
   get 'calendar/schedule'
-=======
-  resources :events
->>>>>>> 7b9cec20081499ba1a2475a3f63e8ec6c669ca18
 
   namespace :profiles_backoffice do
     get 'welcome/index'
