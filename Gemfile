@@ -41,9 +41,15 @@ gem 'devise'
 gem 'rails-i18n', '~> 5.1' 
 
 #Instalação de calendário
+
+gem 'event-calendar', '~> 2.3', '>= 2.3.3'
+gem 'fullcalendar-rails', '>= 2.1.1'
+gem 'momentjs-rails'
+
 gem 'fullcalendar-rails', '>= 2.1.1'
 gem 'momentjs-rails'
 gem 'event-calendar', '~> 2.3', '>= 2.3.3'
+
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', source: 'https://rails-assets.org'
