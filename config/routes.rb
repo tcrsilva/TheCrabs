@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :eventos
   resources :perfils
   resources :predios
   resources :events
