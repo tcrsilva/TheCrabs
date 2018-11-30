@@ -40,17 +40,6 @@ gem 'devise'
 #Instalação do tradutor
 gem 'rails-i18n', '~> 5.1' 
 
-#Instalação de calendário
-
-gem 'event-calendar', '~> 2.3', '>= 2.3.3'
-gem 'fullcalendar-rails', '>= 2.1.1'
-gem 'momentjs-rails'
-
-gem 'fullcalendar-rails', '>= 2.1.1'
-gem 'momentjs-rails'
-gem 'event-calendar', '~> 2.3', '>= 2.3.3'
-
-
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', source: 'https://rails-assets.org'
   gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
@@ -86,3 +75,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "watu_table_builder", :require => "table_builder"

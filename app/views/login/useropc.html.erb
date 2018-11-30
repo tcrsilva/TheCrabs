@@ -9,8 +9,9 @@
     <% if admin_signed_in? %>
        
             <h3><%= current_admin.try(:email) %></h3>
-            <p><%= link_to 'Predios', welcome_index_path, class:"btn btn-info" %> <%= link_to 'Perfil',welcome_index_path, class:"btn btn-info" %></p>
+            <p><%= link_to 'Predios', welcome_index_path, class:"btn btn-info" %> <%= link_to 'Perfil', information_path, class:"btn btn-info" %></p>
             <p><%= link_to "Cadastrar Novo Morador", new_profile_registration_path, class:"btn btn-info" %>
+            <p><%= link_to "Calendário", eventos_path, class:"btn btn-info" %>
             <%= link_to "Sair", destroy_admin_session_path, class:"btn btn-info", method: :delete %> </p>
         
     
