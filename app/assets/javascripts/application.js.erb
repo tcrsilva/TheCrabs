@@ -1,3 +1,5 @@
+//= require moment
+//= require fullcalendar
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -17,6 +19,16 @@
 //= require notify-js-legacy/notify
 //= require bootstrap/dist/js/bootstrap
 //= require popper.js/dist/popper
-//---------------
-//= require moment
-//= require fullcalendar
+
+function eventCalendar() {
+  return $('#calendar').fullCalendar({ });
+};
+function clearCalendar() {
+  $('#calendar').fullCalendar('delete'); 
+  $('#calendar').html('');
+};
+
+$(document).on('turbolinks:load', function(){
+  eventCalendar();  
+});
+$(document).on('turbolinks:before-cache', clearCalendar);
