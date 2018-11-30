@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PerfilTest < ActiveSupport::TestCase
+class InformationTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

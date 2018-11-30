@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Information</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nm sindico</th>
+      <th>Cd sindico</th>
+      <th>Ds email</th>
+      <th>Cd telefone</th>
+      <th>Cd celular</th>
+      <th>Ds endereco</th>
+      <th>Ds municipio</th>
+      <th>Cd apartamento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @information.each do |information| %>
+      <tr>
+        <td><%= information.nm_sindico %></td>
+        <td><%= information.cd_sindico %></td>
+        <td><%= information.ds_email %></td>
+        <td><%= information.cd_telefone %></td>
+        <td><%= information.cd_celular %></td>
+        <td><%= information.ds_endereco %></td>
+        <td><%= information.ds_municipio %></td>
+        <td><%= information.cd_apartamento %></td>
+        <td><%= link_to 'Show', information %></td>
+        <td><%= link_to 'Edit', edit_information_path(information) %></td>
+        <td><%= link_to 'Destroy', information, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Information', new_information_path %>

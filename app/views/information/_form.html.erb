@@ -1,0 +1,57 @@
+<%= form_with(model: information, local: true) do |form| %>
+  <% if information.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(information.errors.count, "error") %> prohibited this information from being saved:</h2>
+
+      <ul>
+      <% information.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nm_sindico %>
+    <%= form.text_field :nm_sindico %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cd_sindico %>
+    <%= form.number_field :cd_sindico %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ds_email %>
+    <%= form.text_field :ds_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cd_telefone %>
+    <%= form.number_field :cd_telefone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cd_celular %>
+    <%= form.number_field :cd_celular %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ds_endereco %>
+    <%= form.text_field :ds_endereco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ds_municipio %>
+    <%= form.text_field :ds_municipio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cd_apartamento %>
+    <%= form.number_field :cd_apartamento %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
