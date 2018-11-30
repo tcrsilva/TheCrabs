@@ -1,5 +1,6 @@
 <style>
 h1{
+  text-align: center;
   padding:15px;
 }
 
@@ -66,16 +67,23 @@ font-size: 11px;
 text-align: center;
 }
 </style>
-<h1>Calendário de eventos do seu prédio: </h1>
+<h1>Esse é o calendário de eventos do seu prédio! </h1>
 <div id="calendar">
-	<%= calendar_for(@eventos) do |t| %>
+	<h2 id="month">
+		<%= link_to "<", :month => (@date.beginning_of_month-1).strftime("%Y-%m-%d") %>
+		<%=h @date.strftime("%B %Y") %>
+		<%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-%d") %>
+	</h2>
+	<%= calendar_for @eventos, :year => @date.year, :month => @date.month do |t| %>
 	<%= t.head('DOM','SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB') %>
 	<%= t.day do |day, eventos| %>
 	<%= day.day %>
-	<% eventos.each do |eventos| %>
-	<%= h(eventos.titulo) %>
+	<% eventos.each do |eventos| %><br>
+	<%= link_to h(eventos.titulo), eventos %><br>
+	<%= link_to 'Editar', edit_evento_path(eventos) %> | <%= link_to 'Deletar', eventos, method: :delete, data: { confirm: 'Tem certeza?' } %>
 	<% end %>
 	<% end %>
 	<% end %>
 </div>
-<%= link_to 'Novo Evento', new_evento_path %>
+<br>
+<%= link_to 'Novo Eventos', new_evento_path , class:"btn btn-primary btn-lg btn-block"%>

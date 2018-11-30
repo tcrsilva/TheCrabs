@@ -5,6 +5,8 @@ class EventosController < ApplicationController
   # GET /eventos.json
   def index
     @eventos = Evento.all
+    @date = params[:month] ? Date.parse(params[:month]) : Date.today
+    #setar o evento para receber a data presente
   end
 
   # GET /eventos/1
