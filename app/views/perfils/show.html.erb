@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<form>
+
+  <div class="form-group">
+    <%= label_tag nil, @perfils.class.human_attribute_name(:nm_sindico) %>
+    <%= text_field_tag nil, @perfils.nm_sindico, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, @perfils.class.human_attribute_name(:cd_sindico) %>
+    <%= text_field_tag nil, @perfils.cd_sindico, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, @perfils.class.human_attribute_name(:ds_email) %>
+    <%= text_field_tag nil,@perfils.ds_email , class:"form-control", disabled: true %>
+  </div>
+  
+  <div class="form-group">
+    <%= label_tag nil, @perfils.class.human_attribute_name(:cd_telefone) %>
+    <%= text_field_tag nil, @perfils.cd_telefone , class:"form-control", disabled: true %>
+  </div>
+  
+  <div class="form-group">
+    <%= label_tag nil, @perfils.class.human_attribute_name(:cd_celular) %>
+    <%= text_field_tag nil, @perfils.cd_celular, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, @perfils.class.human_attribute_name(:ds_endereco) %>
+    <%= text_field_tag nil, @perfils.ds_endereco, class:"form-control", disabled: true %>
+  </div>
+  
+  <div class="form-group">
+    <%= label_tag nil, @perfils.class.human_attribute_name(:cd_apartamento) %>
+    <%= text_field_tag nil, @perfils.cd_apartamento, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, @perfils.class.human_attribute_name(:ds_municipio) %>
+    <%= text_field_tag nil,@perfils.ds_municipio, class:"form-control", disabled: true %>
+  </div>
+
+  
+</form>
+
+<%= link_to 'Edit', edit_perfil_path(@perfil), class:"btn btn-primary" %> |
+<%= link_to 'Back', perfils_path, class:"btn btn-primary" %>

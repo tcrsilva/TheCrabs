@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
-
+4
+  resources :perfils
   resources :events
   resources :predios
+  resources :events
+
+  resources :events
+  get 'calendar/schedule'
 
   namespace :profiles_backoffice do
     get 'welcome/index'
