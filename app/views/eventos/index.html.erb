@@ -1,33 +1,81 @@
-<p id="notice"><%= notice %></p>
+<style>
+h1{
+  padding:15px;
+}
 
-<h1>Eventos</h1>
+#calendar table {
+border-collapse: collapse;
+width: 100%;
+}
 
-<table>
-  <thead>
-    <tr>
-      <th>Titulo</th>
-      <th>Texto</th>
-      <th>Date</th>
-      <th>Local</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+#calendar td,
+#calendar th {
+font-family: "Lucida Grande",arial,helvetica,sans-serif;
+font-size: 10px;
+padding: 6px;
+border: 1px solid #999;
+}
 
-  <tbody>
-    <% @eventos.each do |evento| %>
-      <tr>
-        <td><%= evento.titulo %></td>
-        <td><%= evento.texto %></td>
-        <td><%= evento.date %></td>
-        <td><%= evento.local %></td>
-        <td><%= link_to 'Show', evento %></td>
-        <td><%= link_to 'Edit', edit_evento_path(evento) %></td>
-        <td><%= link_to 'Destroy', evento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+#calendar th {
+background: #DDD;
+color: #666;
+text-align: center;
+width: 14.2857142857143%;
+}
 
-<br>
+#calendar td {
+background: #FFF;
+color: #777;
+height: 80px;
+vertical-align: top;
+font-size: 16px;
+}
 
-<%= link_to 'New Evento', new_evento_path %>
+#calendar .notmonth {
+color: #CCC;
+}
+
+#calendar #month {
+margin: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+}
+
+#calendar #month a, #calendar #month a:hover {
+text-decoration: none;
+padding: 0 10px;
+color: #999;
+}
+
+#calendar .today {
+background-color: #D7F2FF;
+}
+
+#calendar ul {
+margin: 0;
+margin-top: 5px;
+padding: 0;
+list-style: none;
+}
+
+#calendar li {
+margin: 0;
+padding: 0;
+font-size: 11px;
+text-align: center;
+}
+</style>
+<h1>Calendário de eventos do seu prédio: </h1>
+<div id="calendar">
+	<%= calendar_for(@eventos) do |t| %>
+	<%= t.head('DOM','SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB') %>
+	<%= t.day do |day, eventos| %>
+	<%= day.day %>
+	<% eventos.each do |eventos| %>
+	<%= h(eventos.titulo) %>
+	<% end %>
+	<% end %>
+	<% end %>
+</div>
+<%= link_to 'Novo Evento', new_evento_path %>
