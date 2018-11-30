@@ -6,8 +6,6 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <!--<th><#%= @predios.human_attribute_name(:cd_sindico) %></th>-->
-      <!--<th><#%= @predios.human_attribute_name(:nm_sindico) %></th>-->
       <th><%= @predios.human_attribute_name(:nm_predio) %></th>
       <th><%= @predios.human_attribute_name(:cd_numero) %></th>
       <th><%= @predios.human_attribute_name(:cd_bloco) %></th>
@@ -24,8 +22,6 @@
   <tbody>
     <% @predios.each do |predio| %>
       <tr>
-        <!--<td><#%= predio.cd_sindico %></td>-->
-        <!--<td><#%= predio.nm_sindico %></td>-->
         <td><%= predio.nm_predio %></td>
         <td><%= predio.cd_numero %></td>
         <td><%= predio.cd_bloco %></td>
@@ -44,4 +40,4 @@
 
 <br>
 
-<%= link_to t('new.predio'), new_predio_path, class:"btn btn-primary btn-lg btn-block"%>
+<%= link_to t('new.predio'), new_predio_path, class:"btn btn-primary btn-lg btn-block" %>

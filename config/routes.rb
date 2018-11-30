@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-
+4
+  resources :perfils
   resources :events
   get 'calendar/schedule'
 
