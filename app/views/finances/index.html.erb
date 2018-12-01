@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Finances</h1>
+<h1>Finanças</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
-      <th>Cd finance</th>
-      <th>Nm finance</th>
-      <th>Ds finance</th>
-      <th>Vl finance</th>
+      <th>Nota Fiscal</th>
+      <th>Tipo de Gasto</th>
+      <th>Descrição do Gasto</th>
+      <th>Valor em Reais</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,9 +20,9 @@
         <td><%= finance.nm_finance %></td>
         <td><%= finance.ds_finance %></td>
         <td><%= finance.vl_finance %></td>
-        <td><%= link_to 'Show', finance %></td>
-        <td><%= link_to 'Edit', edit_finance_path(finance) %></td>
-        <td><%= link_to 'Destroy', finance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', finance %></td>
+        <td><%= link_to 'Editar', edit_finance_path(finance) %></td>
+        <td><%= link_to 'Excluir', finance, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,5 @@
 
 <br>
 
-<%= link_to 'New Finance', new_finance_path %>
+<%= link_to 'Adicionar Gasto', new_finance_path, class:"btn btn-primary btn-lg btn-block" %>
+<%= link_to 'Voltar', login_useropc_path, class:"btn btn-secondary btn-lg btn-block"%>
