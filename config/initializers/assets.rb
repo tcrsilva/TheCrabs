@@ -25,7 +25,8 @@ Rails.application.config.assets.precompile += %w( cable.js
                                                   events.js
                                                   visitors.js
                                                   information.js
-                                                  eventos.js)
+                                                  eventos.js
+                                                  devise/passwords.js)
 
 Rails.application.config.assets.precompile += %w( predios.css
                                                   application.css
