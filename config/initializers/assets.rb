@@ -20,7 +20,11 @@ Rails.application.config.assets.precompile += %w( cable.js
                                                   login.js 
                                                   devise/sessions.js
                                                   devise/registrations.js
-                                                  perfils.js
+                                                  calendar.js
+                                                  events.js
+                                                  visitors.js
+                                                  devise/sessions.js
+                                                  information.js
                                                   eventos.js)
 
 Rails.application.config.assets.precompile += %w( predios.css
@@ -31,7 +35,14 @@ Rails.application.config.assets.precompile += %w( predios.css
                                                   login.css
                                                   devise/sessions.css
                                                   devise/registrations.css
-                                                  perfils.css
+                                                  calendar.css
+                                                  events.css
+                                                  devise/sessions.css
+                                                  events.css
+                                                  visitors.css
+                                                  devise/sessions.css
+                                                  devise/registrations.css
+                                                  information.css
                                                   eventos.css)
 
 

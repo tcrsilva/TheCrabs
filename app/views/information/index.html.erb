@@ -1,0 +1,41 @@
+
+  <p id="notice"><%= notice %></p>
+
+<h1>Perfil Síndico</h1>
+<div id="tab">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Nome Síndico</th>
+      <th>E-mail</th>
+      <th>Telefone</th>
+      <th>Celular</th>
+      <th>Endereco</th>
+      <th>Municipio</th>
+      <th>Apartamento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @information.each do |information| %>
+      <tr>
+        <td><%= information.nm_sindico %></td>
+        <td><%= information.ds_email %></td>
+        <td><%= information.cd_telefone %></td>
+        <td><%= information.cd_celular %></td>
+        <td><%= information.ds_endereco %></td>
+        <td><%= information.ds_municipio %></td>
+        <td><%= information.cd_apartamento %></td>
+        <td class="but" ><%= link_to 'Ver', information %></td>
+        <td class="but"><%= link_to 'Editar', edit_information_path(information) %></td>
+        <td class="but"><%= link_to 'Apagar', information, method: :delete, data: { confirm: 'Deseja mesmo apagar?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Perfil', new_information_path, class:"btn btn-primary btn-lg btn-block" %>
+</div>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome Síndico:</strong>
+  <%= @information.nm_sindico %>
+</p>
+
+
+<p>
+  <strong>E-mail:</strong>
+  <%= @information.ds_email %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @information.cd_telefone %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @information.cd_celular %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @information.ds_endereco %>
+</p>
+
+<p>
+  <strong>Municipio:</strong>
+  <%= @information.ds_municipio %>
+</p>
+
+<p>
+  <strong>N° Apartamento:</strong>
+  <%= @information.cd_apartamento %>
+</p>
+
+<%= link_to 'Editar', edit_information_path(@information), class:"btn btn-info" %> |
+<%= link_to 'Voltar', information_index_path, class:"btn btn-info" %>

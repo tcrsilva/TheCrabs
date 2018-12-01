@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
   
   resources :eventos
-  resources :perfils
+
+
+  resources :information
+  resources :events
+  get 'calendar/schedule'
+
+  resources :events
+
   resources :predios
   resources :events
 
