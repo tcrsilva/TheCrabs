@@ -7,14 +7,14 @@
     
     <!--Cadastro, sair e logar do devise -->
     <% if admin_signed_in? %>
-        <h3>Você está logado como: <%= current_admin.try(:email) %></h3>
-        <p><%= link_to 'Prédios', predios_path, class:"btn btn-danger" %> <%= link_to "Calendário", eventos_path, class:"btn btn-success" %>
-        <%= link_to "Novo Morador", new_profile_registration_path, class:"btn btn-warning" %>
+        <h3>Você está logado como: <%= current_admin.try(:email) %></h3><br>
+        <p><%= link_to 'Prédios', predios_path, class:"btn btn-danger" %> <%= link_to "Calendário", eventos_path, class:"btn btn-success" %></p>
+        <p><%= link_to "Finanças", finances_path, class:"btn btn-dark" %> <%= link_to "Novo Morador", new_profile_registration_path, class:"btn btn-warning" %>
         <%= link_to 'Meu Perfil', information_index_path, class:"btn btn-info" %></p>
-        <br><br><br><br><br>
-        <p><%= link_to "Sair", destroy_admin_session_path, class:"btn btn-light", method: :delete %></p>
-       
-
+        <br><br><br>
+        <p><%= link_to "Sair", destroy_admin_session_path, class:"btn btn-outline-secondary", method: :delete %></p>
+       <br><br><br>
+        
     <% elsif %>
         <h5 style="padding: 1%">Selecione seu tipo de perfil:</h5>
         <p><%= link_to "Síndico", new_admin_session_path, class:"btn btn-info" %></p>

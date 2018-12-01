@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cd_finance: 1
+  nm_finance: MyString
+  ds_finance: MyString
+  vl_finance: 1.5
+
+two:
+  cd_finance: 1
+  nm_finance: MyString
+  ds_finance: MyString
+  vl_finance: 1.5

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cd finance:</strong>
+  <%= @finance.cd_finance %>
+</p>
+
+<p>
+  <strong>Nm finance:</strong>
+  <%= @finance.nm_finance %>
+</p>
+
+<p>
+  <strong>Ds finance:</strong>
+  <%= @finance.ds_finance %>
+</p>
+
+<p>
+  <strong>Vl finance:</strong>
+  <%= @finance.vl_finance %>
+</p>
+
+<%= link_to 'Edit', edit_finance_path(@finance) %> |
+<%= link_to 'Back', finances_path %>
