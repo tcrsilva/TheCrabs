@@ -13,6 +13,8 @@
         <%= link_to 'Meu Perfil', information_index_path, class:"btn btn-info" %></p>
         <br><br><br><br><br>
         <p><%= link_to "Sair", destroy_admin_session_path, class:"btn btn-light", method: :delete %></p>
+       
+
     <% elsif %>
         <h5 style="padding: 1%">Selecione seu tipo de perfil:</h5>
         <p><%= link_to "Síndico", new_admin_session_path, class:"btn btn-info" %></p>
