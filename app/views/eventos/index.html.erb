@@ -75,15 +75,17 @@ text-align: center;
 		<%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-%d") %>
 	</h2>
 	<%= calendar_for @eventos, :year => @date.year, :month => @date.month do |t| %>
-	<%= t.head('DOM','SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB') %>
-	<%= t.day do |day, eventos| %>
-	<%= day.day %>
-	<% eventos.each do |eventos| %><br>
+	  <%= t.head('DOM','SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB') %>
+	  <%= t.day do |day, eventos| %>
+	  <%= day.day %>
+	  <% eventos.each do |eventos| %><br>
 	<%= link_to h(eventos.titulo), eventos %><br>
 	<%= link_to 'Editar', edit_evento_path(eventos) %> | <%= link_to 'Deletar', eventos, method: :delete, data: { confirm: 'Tem certeza?' } %>
-	<% end %>
-	<% end %>
+	  <% end %>
+	  <% end %>
 	<% end %>
 </div>
 <br>
 <%= link_to 'Novo Eventos', new_evento_path , class:"btn btn-primary btn-lg btn-block"%>
+<%= link_to 'Voltar', login_useropc_path, class:"btn btn-secondary btn-lg btn-block"%>
+<br>

@@ -1,6 +1,8 @@
-<h1>Editing Evento</h1>
-
+<div class="jumbotron">
+<h1 class="display-4">Edite o seu evento!</h1>
+<br>
 <%= render 'form', evento: @evento %>
-
-<%= link_to 'Show', @evento %> |
-<%= link_to 'Back', eventos_path %>
+<%= link_to 'Mostrar', @evento, class:"btn btn-dark"%> 
+<%= link_to 'Voltar', eventos_path, class:"btn btn-secondary"%>
+</div>
+ 

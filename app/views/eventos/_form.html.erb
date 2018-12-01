@@ -10,28 +10,30 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :titulo %>
-    <%= form.text_field :titulo %>
+<form class:"form-group row">
+  <div class:"form-group">
+    <%= form.label :titulo, for:"formGroupExampleInput" %>
+    <%= form.text_field :titulo, class:"form-control"  %>
   </div>
 
-  <div class="field">
-    <%= form.label :texto %>
-    <%= form.text_area :texto %>
+  <div class:"form-group row">
+    <%= form.label :texto, for:"formGroupExampleInput" %>
+    <%= form.text_area :texto, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.date_select :date %>
+  <div class:"form-group row">
+    <%= form.label :local, for:"formGroupExampleInput"  %>
+    <%= form.text_area :local, class:"form-control",  id:"exampleSelect1"%>
   </div>
-
-  <div class="field">
-    <%= form.label :local %>
-    <%= form.text_area :local %>
+  <br>
+  <div>
+    <%= form.label :date%>
+    <%= form.date_select :date%>
   </div>
-
+<br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-success"%>
   </div>
+  <br>
 <% end %>
+</form>
