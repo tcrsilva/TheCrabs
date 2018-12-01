@@ -1,44 +1,40 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Nm sindico:</strong>
+  <strong>Nome Síndico:</strong>
   <%= @information.nm_sindico %>
 </p>
 
-<p>
-  <strong>Cd sindico:</strong>
-  <%= @information.cd_sindico %>
-</p>
 
 <p>
-  <strong>Ds email:</strong>
+  <strong>E-mail:</strong>
   <%= @information.ds_email %>
 </p>
 
 <p>
-  <strong>Cd telefone:</strong>
+  <strong>Telefone:</strong>
   <%= @information.cd_telefone %>
 </p>
 
 <p>
-  <strong>Cd celular:</strong>
+  <strong>Celular:</strong>
   <%= @information.cd_celular %>
 </p>
 
 <p>
-  <strong>Ds endereco:</strong>
+  <strong>Endereco:</strong>
   <%= @information.ds_endereco %>
 </p>
 
 <p>
-  <strong>Ds municipio:</strong>
+  <strong>Municipio:</strong>
   <%= @information.ds_municipio %>
 </p>
 
 <p>
-  <strong>Cd apartamento:</strong>
+  <strong>N° Apartamento:</strong>
   <%= @information.cd_apartamento %>
 </p>
 
-<%= link_to 'Edit', edit_information_path(@information) %> |
-<%= link_to 'Back', information_index_path %>
+<%= link_to 'Editar', edit_information_path(@information), class:"btn btn-info" %> |
+<%= link_to 'Voltar', information_index_path, class:"btn btn-info" %>

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   resources :eventos
 
+
   resources :information
   resources :events
   get 'calendar/schedule'
