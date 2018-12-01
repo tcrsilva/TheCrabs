@@ -1,30 +1,33 @@
-<h2>Síndico</h2>
+<div class="jumbotron">
+<h2 class="display-4">Síndico</h2>
+<p class="lead">Insira seus dados para fazer login</p>
 
 <% flash.each do |key, value| %>
        <div class="flash <%= key %>"><%= value %></div>
 <% end %>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
+  <div class="form-group row">
+    <%= f.label :email, class:"col-2 col-form-label" %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
+  <div class="form-group row">
+    <%= f.label :password, class:"col-2 col-form-label" %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
+    <div class="custom-control custom-radio">
+      <%= f.check_box :remember_me, class:"custom-control-indicator" %>
       <%= f.label :remember_me %>
     </div>
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", class:"btn btn-success" %>
   </div>
 <% end %>
-
+<br>
 <%= render "admins/shared/links" %>
+</div>
