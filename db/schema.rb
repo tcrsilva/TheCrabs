@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 2018_12_02_135713) do
     t.datetime "updated_at", null: false
   end
 
+
   create_table "information", force: :cascade do |t|
     t.string "nm_sindico"
     t.integer "cd_sindico"
