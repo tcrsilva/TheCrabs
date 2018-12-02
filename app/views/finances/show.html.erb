@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
 
+<form>
 <p>
-  <strong>Cd finance:</strong>
-  <%= @finance.cd_finance %>
+  <strong>Nota Fiscal:</strong>
+  <%= text_field_tag nil, @finance.cd_finance, class:"form-control" %>
 </p>
 
 <p>
-  <strong>Nm finance:</strong>
-  <%= @finance.nm_finance %>
+  <strong>Tipo de Gasto:</strong>
+  <%= text_field_tag nil, @finance.nm_finance, class:"form-control" %>
 </p>
 
 <p>
-  <strong>Ds finance:</strong>
-  <%= @finance.ds_finance %>
+  <strong>Descrição de Gasto:</strong>
+  <%= text_field_tag nil, @finance.ds_finance, class:"form-control" %>
 </p>
 
 <p>
-  <strong>Vl finance:</strong>
-  <%= @finance.vl_finance %>
+  <strong>Valor em Reais:</strong>
+  <%= text_field_tag nil, @finance.vl_finance, class:"form-control" %>
 </p>
+</form>
 
-<%= link_to 'Edit', edit_finance_path(@finance) %> |
-<%= link_to 'Back', finances_path %>
+<%= link_to 'Editar', edit_finance_path(@finance), class:"btn btn-outline-primary" %> |
+<%= link_to 'Voltar', finances_path, class:"btn btn-outline-warning" %>

@@ -10,28 +10,29 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<div class="container">
+  <div class="form-group">
     <%= form.label :cd_finance %>
-    <%= form.number_field :cd_finance %>
+    <%= form.number_field :cd_finance, class:"form-control", placeholder:"Nota Fiscal" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :nm_finance %>
-    <%= form.text_field :nm_finance %>
+    <%= form.text_field :nm_finance, class:"form-control", placeholder:"Título do Gasto" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :ds_finance %>
-    <%= form.text_field :ds_finance %>
+    <%= form.text_field :ds_finance, class:"form-control", placeholder:"Motivo/Explicação do Gasto" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :vl_finance %>
-    <%= form.text_field :vl_finance %>
+    <%= form.text_field :vl_finance, class:"form-control", placeholder:"Valor em Reais" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit nil, class:"btn btn-outline-success"%>
   </div>
+</div>
 <% end %>

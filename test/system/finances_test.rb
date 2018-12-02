@@ -12,30 +12,30 @@ class FinancesTest < ApplicationSystemTestCase
 
   test "creating a Finance" do
     visit finances_url
-    click_on "New Finance"
+    click_on "Adicionar Gasto"
 
-    fill_in "Cd Finance", with: @finance.cd_finance
-    fill_in "Ds Finance", with: @finance.ds_finance
-    fill_in "Nm Finance", with: @finance.nm_finance
-    fill_in "Vl Finance", with: @finance.vl_finance
-    click_on "Create Finance"
+    fill_in "Nota Fiscal", with: @finance.cd_finance
+    fill_in "Descrição de Gasto", with: @finance.ds_finance
+    fill_in "Tipo de Gasto", with: @finance.nm_finance
+    fill_in "Valor em Reais", with: @finance.vl_finance
+    click_on "Salvar"
 
     assert_text "Finance was successfully created"
-    click_on "Back"
+    click_on "Voltar"
   end
 
   test "updating a Finance" do
     visit finances_url
     click_on "Edit", match: :first
 
-    fill_in "Cd Finance", with: @finance.cd_finance
-    fill_in "Ds Finance", with: @finance.ds_finance
-    fill_in "Nm Finance", with: @finance.nm_finance
-    fill_in "Vl Finance", with: @finance.vl_finance
-    click_on "Update Finance"
+    fill_in "Nota Fiscal", with: @finance.cd_finance
+    fill_in "Descrição de Gasto", with: @finance.ds_finance
+    fill_in "Tipo de Gasto", with: @finance.nm_finance
+    fill_in "Valor em Reais", with: @finance.vl_finance
+    click_on "Atualizar"
 
-    assert_text "Finance was successfully updated"
-    click_on "Back"
+    assert_text "Gasto Adicionado"
+    click_on "Voltar"
   end
 
   test "destroying a Finance" do
