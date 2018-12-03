@@ -1,14 +1,13 @@
 <%= form_with(model: evento, local: true) do |form| %>
   <% if evento.errors.any? %>
-    <div id="error_explanation">
+  <div id="error_explanation">
       <h2><%= pluralize(evento.errors.count, "error") %> prohibited this evento from being saved:</h2>
-
       <ul>
       <% evento.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
-    </div>
+  </div>
   <% end %>
 <form class:"form-group row">
   <div class:"form-group">
@@ -24,16 +23,16 @@
   <div class:"form-group row">
     <%= form.label :local, for:"formGroupExampleInput"  %>
     <%= form.text_area :local, class:"form-control",  id:"exampleSelect1"%>
-  </div>
-  <br>
+  </div> <br>
+  
   <div>
     <%= form.label :date%>
     <%= form.date_select :date%>
-  </div>
-<br>
+  </div> <br>
+  
   <div class="actions">
     <%= form.submit class:"btn btn-success"%>
-  </div>
-  <br>
-<% end %>
+  </div> <br>
+  
+  <% end %>
 </form>

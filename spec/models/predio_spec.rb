@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Predio, type: :model do
+    #Capybara
+    #RSpec
     context "Validade de um Prédio" do
         it "Predio válido?" do
             predio = Predio.new
