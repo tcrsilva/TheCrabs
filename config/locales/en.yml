@@ -45,10 +45,13 @@ en:
 
   new:
     predio: "New Bulding"
+    finance: "New Finance"
   editing:
     predio: "Edit Bulding"
   showing:
     predio: "Show Building"
+  back: 
+    voltar: "Back"
  
 
 

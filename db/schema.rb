@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_02_135713) do
+ActiveRecord::Schema.define(version: 2018_12_01_181716) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -51,8 +51,18 @@ ActiveRecord::Schema.define(version: 2018_12_02_135713) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 00111417d9655b77c83c97a32ac8abe5df24f8f4
+>>>>>>> cd74ce61e613caa7da874fe004a47d0cbff2fffa
+>>>>>>> 178496f4f7a29b654f8b15d314b32eaaceb793f3
   create_table "information", force: :cascade do |t|
     t.string "nm_sindico"
     t.integer "cd_sindico"
@@ -66,6 +76,8 @@ ActiveRecord::Schema.define(version: 2018_12_02_135713) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
   create_table "papers", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -74,6 +86,7 @@ ActiveRecord::Schema.define(version: 2018_12_02_135713) do
     t.datetime "updated_at", null: false
   end
 
+>>>>>>> cd74ce61e613caa7da874fe004a47d0cbff2fffa
   create_table "perfils", force: :cascade do |t|
     t.string "sindico"
     t.datetime "created_at", null: false

@@ -2,16 +2,8 @@ Rails.application.routes.draw do
   
   resources :finances
   resources :eventos
-
-
   resources :information
-  resources :events
-  get 'calendar/schedule'
-
-  resources :events
-
   resources :predios
-  resources :events
 
   namespace :profiles_backoffice do
     get 'welcome/index'
