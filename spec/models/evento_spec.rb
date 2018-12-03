@@ -27,6 +27,13 @@ RSpec.describe Evento, type: :model do
             expect(evento1.valid?).to be_truthy
         end
         
+        it "Evento sem data e local?" do
+            evento1 = Evento.new
+            evento1.date = nil
+            evento1.local = nil
+            expect(evento1.valid?).to be_falsey
+        end
+        
         it "Evento valido?" do
             evento2 = Evento.new
             evento2.titulo = "Aniversário Bianca AP12"
@@ -35,5 +42,21 @@ RSpec.describe Evento, type: :model do
             evento2.local = "Salão de Festas"
             expect(evento2.valid?).to be_truthy
         end
+        
+        it "Evento sem data e local?" do
+            evento2 = Evento.new
+            evento2.date = nil
+            evento2.local = nil
+            expect(evento2.valid?).to be_falsey
+        end
     end
+    
+    #context "Titulos Válidos" do
+    #    it "Titulo completo" do
+    #        evento = Evento.new
+    #        evento.titulo = "Aniversário Júlio AP 20"
+    #        evento.texto = "Venha comemorar meu aniversário!"
+    #        expect(evento.titulo_completo).to eql("")
+    #    end
+    #end
 end
