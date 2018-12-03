@@ -1,24 +1,48 @@
-# README
+# The Crabs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Gerenciador de condomínios / Perfil do Síndico
 
-Things you may want to cover:
+## Getting Started
+Desenvolvido para a segunda avaliação da disciplina de Desenvolvimento para Servidores I pelos alunos da Fatec Santos.
+Ambiente de produção em máquina virtual, c9.
 
-* Ruby version
+### Prerequisites
+É necessário ter instalado a linguagem Ruby e a framework On Rails. Portanto:
 
-* System dependencies
+```
+Install ruby
+```
 
-* Configuration
+```
+Install rails
+```
 
-* Database creation
+## Running the tests
+Os testes foram feitos com a gem RSpec. No terminal, usar o comando: 
 
-* Database initialization
+```
+rake spec
+```
 
-* How to run the test suite
+## Deployment
 
-* Services (job queues, cache servers, search engines, etc.)
+* Github (https://github.com/tcrsilva/projetop2)
+* Heroku (link)
 
-* Deployment instructions
+## Built With
 
-* ...
+- Ruby
+- On Rails
+- Postgre SQL
+- HTML (Embedded Ruby)
+- Bootstrap
+- CoffeeScript
+- JavaScript
+
+## Authors
+* **Francielle Zanella**
+https://github.com/Franzanella
+* **Juan Bertoluzzi**
+https://github.com/juanbg10
+* **Tais Silva**
+https://github.com/tcrsilva
