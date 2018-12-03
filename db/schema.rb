@@ -52,12 +52,17 @@ ActiveRecord::Schema.define(version: 2018_12_01_181716) do
   end
 
 <<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> 00111417d9655b77c83c97a32ac8abe5df24f8f4
 >>>>>>> cd74ce61e613caa7da874fe004a47d0cbff2fffa
+>>>>>>> 178496f4f7a29b654f8b15d314b32eaaceb793f3
   create_table "information", force: :cascade do |t|
     t.string "nm_sindico"
     t.integer "cd_sindico"
@@ -67,8 +72,6 @@ ActiveRecord::Schema.define(version: 2018_12_01_181716) do
     t.string "ds_endereco"
     t.string "ds_municipio"
     t.integer "cd_apartamento"
-<<<<<<< HEAD
-=======
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -78,7 +81,7 @@ ActiveRecord::Schema.define(version: 2018_12_01_181716) do
   create_table "papers", force: :cascade do |t|
     t.string "title"
     t.text "description"
->>>>>>> 00111417d9655b77c83c97a32ac8abe5df24f8f4
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
