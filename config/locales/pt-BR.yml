@@ -14,6 +14,7 @@ pt-BR:
     back: "Voltar"
   new:
     predio: "Novo Prédio"
+    finance: "Adicionar Gasto"
   editing:
     predio: "Editar prédio"
   showing:

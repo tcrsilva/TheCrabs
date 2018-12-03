@@ -2,6 +2,7 @@
   activerecord:
     models:
       predio: Prédio
+      finance: Finanças
     attributes:
       predio:
         one: Prédio
@@ -17,12 +18,20 @@
         cd_telefone: Telefone
         updated_at: Atualizado em
         created_at: Criado em
-        
+      finance:
+        one: Custo
+        other: Custos
+        cd_finance: Nota Fiscal
+        nm_finance: Gasto
+        ds_finance: Motivo Gasto
+        vl_finance: Valor
+      
         
 'en':
   activerecord:
     models:
       predio: Building
+      finance: Finance
     attributes:
       predio:
         one: Building
@@ -38,5 +47,10 @@
         cd_telefone: Telephone
         updated_at: Updated
         created_at: Created
-        
-        
+      finance: 
+        one: Outgoing
+        other: Outgoing
+        cd_finance: Invoice
+        nm_finance: Outgoing
+        ds_finance: Outgoing motive
+        vl_finance: Value
