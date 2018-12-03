@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_02_135713) do
+ActiveRecord::Schema.define(version: 2018_12_01_181716) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -51,7 +51,6 @@ ActiveRecord::Schema.define(version: 2018_12_02_135713) do
     t.datetime "updated_at", null: false
   end
 
-
   create_table "information", force: :cascade do |t|
     t.string "nm_sindico"
     t.integer "cd_sindico"
@@ -61,13 +60,6 @@ ActiveRecord::Schema.define(version: 2018_12_02_135713) do
     t.string "ds_endereco"
     t.string "ds_municipio"
     t.integer "cd_apartamento"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "papers", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
