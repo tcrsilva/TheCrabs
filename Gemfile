@@ -42,7 +42,6 @@ gem 'rails-i18n', '~> 5.1'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', source: 'https://rails-assets.org'
-  #gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 end
 
 group :development, :test do
