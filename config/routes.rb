@@ -12,8 +12,8 @@ Rails.application.routes.draw do
     get 'welcome/index'
   end
   
-  #devise_for :profiles
-  #devise_for :admins
+  devise_for :profiles
+  devise_for :admins
   
   get 'usuario/new'
   get 'usuario/show/:id' => "usuario#show", as: "usuario_show"
