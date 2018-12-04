@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Evento, type: :model do
+    # RSpec
     context "Validade de um Evento" do
         it "Evento valido?" do
             evento = Evento.new
