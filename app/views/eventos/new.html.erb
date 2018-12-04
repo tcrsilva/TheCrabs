@@ -1,7 +1,7 @@
 <div class="jumbotron">
-<h1 class="display-4">Novo Evento!</h1>
-<p class="lead">Crie um  novo evento no calendário</p>
+<h1 class="display-4"><%= t('new.evento') %></h1>
+<p class="lead"><%= t('new.calendar')%></p>
 
 <p><%= render 'form', evento: @evento %> 
-<%= link_to 'Voltar', eventos_path, class:"btn btn-secondary"%></p>
+<%= link_to t('links.back'), eventos_path, class:"btn btn-secondary"%></p>
 </div>

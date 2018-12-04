@@ -67,7 +67,7 @@ font-size: 11px;
 text-align: center;
 }
 </style>
-<h1 class="display-4">Esse é o calendário de eventos do seu prédio! </h1>
+<h1 class="display-4"><%= t('messages.calendar') %></h1>
 <div id="calendar">
 	<h2 id="month">
 		<%= link_to "<", :month => (@date.beginning_of_month-1).strftime("%Y-%m-%d") %>
@@ -80,12 +80,12 @@ text-align: center;
 	  <%= day.day %>
 	  <% eventos.each do |eventos| %><br>
 	<%= link_to h(eventos.titulo), eventos %><br>
-	<%= link_to 'Editar', edit_evento_path(eventos) %> | <%= link_to 'Deletar', eventos, method: :delete, data: { confirm: 'Tem certeza?' } %>
+	<%= link_to t('links.edit'), edit_evento_path(eventos) %> | <%= link_to t('links.delete'), eventos, method: :delete, data: { confirm: 'Tem certeza?' } %>
 	  <% end %>
 	  <% end %>
 	<% end %>
 </div>
 <br>
-<%= link_to 'Novo Evento', new_evento_path , class:"btn btn-primary btn-lg btn-block"%>
-<%= link_to 'Voltar', login_useropc_path, class:"btn btn-secondary btn-lg btn-block"%>
+<%= link_to t('new.evento'), new_evento_path , class:"btn btn-primary btn-lg btn-block"%>
+<%= link_to t('links.back'), login_useropc_path, class:"btn btn-secondary btn-lg btn-block"%>
 <br>

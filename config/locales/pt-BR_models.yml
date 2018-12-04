@@ -25,6 +25,25 @@
         nm_finance: Gasto
         ds_finance: Motivo Gasto
         vl_finance: Valor
+      evento:
+        one: Evento
+        other: Eventos
+        titulo: Título
+        texto: Texto
+        date: Data
+        local: Local
+      information:
+        one: Informação
+        other: Informações
+        nm_sindico: Nome
+        ds_email: E-mail
+        cd_telefone: Telefone
+        cd_celular: Celular
+        ds_endereco: Endereço
+        ds_municipio: Município
+        cd_apartamento: Número Apartamento
+        
+        
       
         
 'en':
@@ -54,3 +73,23 @@
         nm_finance: Outgoing
         ds_finance: Outgoing motive
         vl_finance: Value
+      evento:
+        one: Event
+        other: Events
+        titulo: Title
+        texto: Text
+        date: Date
+        local: Local
+      information:
+        one: Information
+        other: Informations
+        nm_sindico: Name
+        ds_email: E-mail
+        cd_telefone: Telephone
+        cd_celular: Cellphone
+        ds_endereco: Adress
+        ds_municipio: Country
+        cd_apartamento: Apartment Number
+        
+        
+        

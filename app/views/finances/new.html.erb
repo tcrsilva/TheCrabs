@@ -1,5 +1,5 @@
-<h1>Adicionar Gasto</h1>
+<h1><%= t('new.finance') %></h1>
 
 <%= render 'form', finance: @finance %>
 
-<br><%= link_to 'Voltar', finances_path, class:"btn btn-outline-warning"  %>
+<br><%= link_to t('links.back'), finances_path, class:"btn btn-outline-warning"  %>

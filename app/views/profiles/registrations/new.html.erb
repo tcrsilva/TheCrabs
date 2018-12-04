@@ -1,6 +1,6 @@
 <div class="jumbotron">
-<h1 class="display-4">Cadastre o seu novo morador!</h1>
- <p class="lead">Insira os dados necessários para o cadastro:</p>
+<h1 class="display-4"><%= t('morador2') %></h1>
+ <p class="lead"><%= t('morador') %></p>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
@@ -27,8 +27,8 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 <br>
-  <p><%= f.submit "Cadastrar", class: "btn btn-success"%>
-  <%= link_to 'Voltar', login_useropc_path, class:"btn btn-secondary"%></p>
+  <p><%= f.submit t('cadastrar'), class: "btn btn-success"%>
+  <%= link_to t('links.back'), login_useropc_path, class:"btn btn-secondary"%></p>
 <% end %>
 </div>
 <!--%= render "profiles/shared/links", class: "btn btn-light" %>-->

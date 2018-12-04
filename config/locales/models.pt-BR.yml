@@ -6,7 +6,7 @@
         other: Administradores
       profile:
         one: Perfil
-        other: Perfis  
+        other: Perfis 
     attributes:
       admin:
         id: Código

@@ -1,40 +1,40 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Nome Síndico:</strong>
+  <strong><%= t('showing.nome') %>:</strong>
   <%= @information.nm_sindico %>
 </p>
 
 
 <p>
-  <strong>E-mail:</strong>
+  <strong><%= t('showing.emaill') %>:</strong>
   <%= @information.ds_email %>
 </p>
 
 <p>
-  <strong>Telefone:</strong>
+  <strong><%= t('showing.tele') %>:</strong>
   <%= @information.cd_telefone %>
 </p>
 
 <p>
-  <strong>Celular:</strong>
+  <strong><%= t('showing.celu') %>:</strong>
   <%= @information.cd_celular %>
 </p>
 
 <p>
-  <strong>Endereco:</strong>
+  <strong><%= t('showing.ende') %>:</strong>
   <%= @information.ds_endereco %>
 </p>
 
 <p>
-  <strong>Municipio:</strong>
+  <strong><%= t('showing.muni') %>:</strong>
   <%= @information.ds_municipio %>
 </p>
 
 <p>
-  <strong>N° Apartamento:</strong>
+  <strong><%= t('showing.apart') %>:</strong>
   <%= @information.cd_apartamento %>
 </p>
 
-<%= link_to 'Editar', edit_information_path(@information), class:"btn btn-info" %> 
-<%= link_to 'Voltar', information_index_path, class:"btn btn-info" %>
+<%= link_to t('links.show'), edit_information_path(@information), class:"btn btn-info" %> 
+<%= link_to t('links.back'), information_index_path, class:"btn btn-info" %>

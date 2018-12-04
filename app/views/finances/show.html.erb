@@ -2,25 +2,25 @@
 
 <form>
 <p>
-  <strong>Nota Fiscal:</strong>
+  <strong><%= t('showing.nf') %>:</strong>
   <%= text_field_tag nil, @finance.cd_finance, class:"form-control" %>
 </p>
 
 <p>
-  <strong>Tipo de Gasto:</strong>
+  <strong><%= t('showing.gastos') %>:</strong>
   <%= text_field_tag nil, @finance.nm_finance, class:"form-control" %>
 </p>
 
 <p>
-  <strong>Descrição de Gasto:</strong>
+  <strong><%= t('showing.dsgastos') %>:</strong>
   <%= text_field_tag nil, @finance.ds_finance, class:"form-control" %>
 </p>
 
 <p>
-  <strong>Valor em Reais:</strong>
+  <strong><%= t('showing.valor') %>:</strong>
   <%= text_field_tag nil, @finance.vl_finance, class:"form-control" %>
 </p>
 </form>
 
-<%= link_to 'Editar', edit_finance_path(@finance), class:"btn btn-outline-primary" %> |
-<%= link_to 'Voltar', finances_path, class:"btn btn-outline-warning" %>
+<%= link_to t('links.edit'), edit_finance_path(@finance), class:"btn btn-outline-primary" %> |
+<%= link_to t('links.back'), finances_path, class:"btn btn-outline-warning" %>

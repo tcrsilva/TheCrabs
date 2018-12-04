@@ -30,11 +30,28 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 en:
   current_locale: "English (International)"
-  welcome: "Welcome!"
+  welcome: "Welcome to your app!"
+  predios: "Building"
+  finances: "Finances"
+  myprofile: "My profile"
+  cadastrar: "Add"
+  morador: "Enter the necessary data to register:"
+  morador2: "Register your new resident!"
+  calen: "Calendar"
+  newresident: "New Resident"
+  exit: "Exit"
+  sindico: "Manager"
+  pp: "Select your profile type:"
+  dados: "Enter your details to sign in"
   messages:
-    welcome: "This is the APP CRABS to manage your condo."
+    finance: "Finance"
     menu: "To start, choose an option below:"
     confirm: "Are you sure?"
+    predio: "Adding Building"
+    start: "Start"
+    calendar: "This is the calendar of events for your building!"
+    forstart: "To start click the link above!"
+    sindico: "Manager Profile"
   hello: "Hello world!!"
   links:
     edit: "Edit"
@@ -42,17 +59,38 @@ en:
     delete: "Delete"
     new: "New"
     back: "Back"
+    save: "Save"
 
   new:
     predio: "New Bulding"
     finance: "New Finance"
+    evento: "New Event"
+    calendar: "Create a new calendar event"
+    log: "You are logged in as: "
   editing:
     predio: "Edit Bulding"
+    finance: "Edit Finance"
+    evento: "Edit your Event!"
+    profile: "Edit Profile"
   showing:
     predio: "Show Building"
+    finance: "Show Finance"
+    nome: "Name"
+    emaill: "E-mail"
+    tele: "Telephone"
+    celu: "Cellphone"
+    ende: "Adress"
+    muni: "Country"
+    apart: "Apartment"
+    nf: "Invoice"
+    gastos: "Outgoing"
+    dsgastos: "Outgoing motive"
+    valor: "Value"
   back: 
     voltar: "Back"
- 
+    tab: "Delete"
+
+    
 
 
 

@@ -2,5 +2,5 @@
 
 <%= render 'form', finance: @finance %>
 <br>
-<%= link_to 'Ver', @finance, class:"btn btn-outline-primary" %> 
-<%= link_to 'Voltar', finances_path, class:"btn btn-outline-primary" %>
+<%= link_to t('links.show'), @finance, class:"btn btn-outline-primary" %> 
+<%= link_to t('links.back'), finances_path, class:"btn btn-outline-primary" %>
