@@ -9,7 +9,7 @@
     <% if admin_signed_in? %>
         <h3><%= t('new.log') %><%= current_admin.try(:email) %></h3><br>
         <p><%= link_to t('predios'), predios_path, class:"btn btn-danger" %> <%= link_to t('calen'), eventos_path, class:"btn btn-success" %></p>
-        <p><%= link_to t('finances'), finances_path, class:"btn btn-dark" %> <%= link_to t('newresident'), new_profile_registration_path, class:"btn btn-warning" %>
+        <p><%= link_to t('finances'), finances_path, class:"btn btn-primary" %> <%= link_to t('newresident'), new_profile_registration_path, class:"btn btn-warning" %>
         <%= link_to t('myprofile'), information_index_path, class:"btn btn-info" %></p>
         <br><br><br>
         <p><%= link_to t('exit'), destroy_admin_session_path, class:"btn btn-outline-secondary", method: :delete %></p>
