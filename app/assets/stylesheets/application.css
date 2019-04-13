@@ -27,4 +27,8 @@
     font-size: 200%;
     line-height: 100%;
   }
+  
+  ul li {
+    display: inline-block;
+  }
 }
