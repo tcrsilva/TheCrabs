@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TIME TO ANSWER</title>
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        
+        <%= stylesheet_link_tag    'application' %>
+        <%= stylesheet_link_tag    'users_backoffice' %>
+    </head>
+    
+    <body>
+        <h1>LAYOUT USUÁRIO</h1>
+        <%= yield %>
+        
+        <%= javascript_include_tag 'application' %>
+        <%= javascript_include_tag 'users_backoffice' %>
+    </body>
+</html>
