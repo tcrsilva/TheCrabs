@@ -27,7 +27,11 @@ rake spec
 ## Deployment
 
 * Github (https://github.com/tcrsilva/projetop2)
-* Heroku (link)
+* Heroku (https://secret-ocean-92133.herokuapp.com)
+
+```
+heroku info -s | grep https://secret-ocean-92133.herokuapp.com | cut -d = -f2
+```
 
 ## Built With
 

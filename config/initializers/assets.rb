@@ -21,14 +21,13 @@ Rails.application.config.assets.precompile += %w( cable.js
                                                   devise/sessions.js
                                                   devise/registrations.js
                                                   devise/passwords.js
-                                                  calendar.js
-                                                  events.js
                                                   visitors.js
                                                   information.js
                                                   eventos.js
                                                   devise/passwords.js
                                                   finances.js
-                                                  users_backoffice.js)
+                                                  users_backoffice.js
+                                                  finances.js )
 
 Rails.application.config.assets.precompile += %w( predios.css
                                                   application.css
@@ -36,15 +35,10 @@ Rails.application.config.assets.precompile += %w( predios.css
                                                   welcome.css 
                                                   start.css                                                  
                                                   login.css
-                                                  devise/sessions.css
                                                   devise/registrations.css
-                                                  calendar.css
-                                                  events.css
                                                   devise/sessions.css
                                                   events.css
                                                   visitors.css
-                                                  devise/sessions.css
-                                                  devise/registrations.css
                                                   information.css
                                                   eventos.css
                                                   devise/passwords.css
