@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_01_181716) do
+ActiveRecord::Schema.define(version: 2019_01_07_140805) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -33,15 +33,6 @@ ActiveRecord::Schema.define(version: 2018_12_01_181716) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "events", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.datetime "start_time"
-    t.datetime "end_time"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "finances", force: :cascade do |t|
     t.integer "cd_finance"
     t.string "nm_finance"
@@ -51,18 +42,6 @@ ActiveRecord::Schema.define(version: 2018_12_01_181716) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 00111417d9655b77c83c97a32ac8abe5df24f8f4
->>>>>>> cd74ce61e613caa7da874fe004a47d0cbff2fffa
->>>>>>> 178496f4f7a29b654f8b15d314b32eaaceb793f3
   create_table "information", force: :cascade do |t|
     t.string "nm_sindico"
     t.integer "cd_sindico"
@@ -76,37 +55,23 @@ ActiveRecord::Schema.define(version: 2018_12_01_181716) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-=======
-  create_table "papers", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
->>>>>>> cd74ce61e613caa7da874fe004a47d0cbff2fffa
-  create_table "perfils", force: :cascade do |t|
-    t.string "sindico"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "predios", force: :cascade do |t|
+    t.string "nm_sindico"
+    t.integer "cd_sindico"
     t.string "nm_predio"
     t.integer "cd_numero"
     t.integer "cd_bloco"
     t.integer "cd_cep"
     t.string "ds_endereco"
     t.string "ds_municipio"
+    t.string "sg_estado"
     t.string "ds_regioesSociais"
     t.integer "cd_telefone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "profiles", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -114,8 +79,8 @@ ActiveRecord::Schema.define(version: 2018_12_01_181716) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_profiles_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_profiles_on_reset_password_token", unique: true
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

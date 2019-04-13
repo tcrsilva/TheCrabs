@@ -8,4 +8,17 @@
         <%= link_to t('message.start'), login_useropc_path, class:"btn btn-info" %>
         <p style="padding:2%;"><%= t('messages.forstart') %></p>
     </div>
+    
+    <% if user_signed_in? %>
+      <p>Usuário ESTÁ logado / <%= current_user.email %> </p>
+    <% else %>
+      <p>Usuário NÃO está logado</p>
+    <% end %>
+
+    <% if admin_signed_in? %>
+      <p>Administrador ESTÁ logado / <%= current_admin.email %> </p>
+    <% else %>
+      <p>Administrador NÃO está logado</p>
+    <% end %>
+    
 </body>

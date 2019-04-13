@@ -27,7 +27,8 @@ Rails.application.config.assets.precompile += %w( cable.js
                                                   information.js
                                                   eventos.js
                                                   devise/passwords.js
-                                                  finances.js )
+                                                  finances.js
+                                                  users_backoffice.js)
 
 Rails.application.config.assets.precompile += %w( predios.css
                                                   application.css
@@ -47,7 +48,8 @@ Rails.application.config.assets.precompile += %w( predios.css
                                                   information.css
                                                   eventos.css
                                                   devise/passwords.css
-                                                  finances.css )
+                                                  finances.css
+                                                  users_backoffice.css)
 
 
 
