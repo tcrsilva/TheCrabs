@@ -33,11 +33,33 @@ ActiveRecord::Schema.define(version: 2019_01_07_140805) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "events", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "finances", force: :cascade do |t|
     t.integer "cd_finance"
     t.string "nm_finance"
     t.string "ds_finance"
     t.float "vl_finance"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "informacos", force: :cascade do |t|
+    t.string "nm_sindico"
+    t.integer "cd_sindico"
+    t.string "ds_email"
+    t.integer "cd_telefone"
+    t.integer "cd_celular"
+    t.string "ds_endereco"
+    t.string "ds_municipio"
+    t.integer "cd_apartamento"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -55,20 +77,42 @@ ActiveRecord::Schema.define(version: 2019_01_07_140805) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "papers", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "perfils", force: :cascade do |t|
+    t.string "sindico"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "predios", force: :cascade do |t|
-    t.string "nm_sindico"
-    t.integer "cd_sindico"
     t.string "nm_predio"
     t.integer "cd_numero"
     t.integer "cd_bloco"
     t.integer "cd_cep"
     t.string "ds_endereco"
     t.string "ds_municipio"
-    t.string "sg_estado"
     t.string "ds_regioesSociais"
     t.integer "cd_telefone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_profiles_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_profiles_on_reset_password_token", unique: true
   end
 
   create_table "users", force: :cascade do |t|
