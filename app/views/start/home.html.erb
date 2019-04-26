@@ -5,8 +5,9 @@
 
     <div style="color: #dc3c28; padding: 0 2% 1%"><h1>THE CRABS</h1></div>
         <h4 style="padding: 1.5%;"><%= t('welcome') %></h4>
-        <%= link_to t('message.start'), login_useropc_path, class:"btn btn-info" %>
-        <p style="padding:2%;"><%= t('messages.forstart') %></p>
+        <%= link_to t('message.start'), login_useropc_path, class:"btn btn-danger", :style => "padding:4%;" %>
+        <br><br>
+        <!--<p style="padding:2%;"><#%= t('messages.forstart') %></p>-->
     </div>
     
     <% if user_signed_in? %>
@@ -16,9 +17,9 @@
     <% end %>
 
     <% if admin_signed_in? %>
-      <p>Administrador ESTÁ logado / <%= current_admin.email %> </p>
+      <p>Síndico ESTÁ logado / <%= current_admin.email %> </p>
     <% else %>
-      <p>Administrador NÃO está logado</p>
+      <p>Síndico NÃO está logado</p>
     <% end %>
     
 </body>
