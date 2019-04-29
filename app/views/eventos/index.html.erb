@@ -80,12 +80,14 @@ text-align: center;
 	  <%= day.day %>
 	  <% eventos.each do |eventos| %><br>
 	<%= link_to h(eventos.titulo), eventos %><br>
+	<%if admin_signed_in? && !user_signed_in? %>
 	<%= link_to t('links.edit'), edit_evento_path(eventos) %> | <%= link_to t('links.delete'), eventos, method: :delete, data: { confirm: 'Tem certeza?' } %>
-	  <% end %>
+	   <% end %>
+	   <% end %>
 	  <% end %>
 	<% end %>
 </div>
 <br>
-<%= link_to t('new.evento'), new_evento_path , class:"btn btn-primary btn-lg btn-block"%>
+<%= link_to t('new.evento'), new_evento_path , class:"btn btn-danger btn-lg btn-block" %>
 <%= link_to t('links.back'), login_useropc_path, class:"btn btn-secondary btn-lg btn-block"%>
 <br>
