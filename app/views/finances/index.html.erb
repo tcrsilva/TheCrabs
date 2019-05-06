@@ -20,9 +20,8 @@
         <td><%= finance.nm_finance %></td>
         <td><%= finance.ds_finance %></td>
         <td><%= finance.vl_finance %></td>
-        <td><%= link_to t('links.show'), finance %></td>
         <td><%= link_to t('links.edit'), edit_finance_path(finance) %></td>
-        <td><%= link_to t('bakc.tab'), finance, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+        <td><%= link_to t('links.tab'), finance, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -25,6 +25,7 @@
         nm_finance: Gasto
         ds_finance: Motivo Gasto
         vl_finance: Valor
+        tab: Deletar
       evento:
         one: Evento
         other: Eventos
@@ -73,6 +74,7 @@
         nm_finance: Outgoing
         ds_finance: Outgoing motive
         vl_finance: Value
+        tab: Delete
       evento:
         one: Event
         other: Events

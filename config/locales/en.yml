@@ -60,6 +60,7 @@ en:
     new: "New"
     back: "Back"
     save: "Save"
+    tab: "Delete"
 
   new:
     predio: "New Bulding"
@@ -72,6 +73,7 @@ en:
     finance: "Edit Finance"
     evento: "Edit your Event!"
     profile: "Edit Profile"
+    tab: "Delete"
   showing:
     predio: "Show Building"
     finance: "Show Finance"
@@ -86,6 +88,7 @@ en:
     gastos: "Outgoing"
     dsgastos: "Outgoing motive"
     valor: "Value"
+    tab: "Delete"
   back: 
     voltar: "Back"
     tab: "Delete"
