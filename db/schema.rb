@@ -51,19 +51,6 @@ ActiveRecord::Schema.define(version: 2019_01_07_140805) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "informacos", force: :cascade do |t|
-    t.string "nm_sindico"
-    t.integer "cd_sindico"
-    t.string "ds_email"
-    t.integer "cd_telefone"
-    t.integer "cd_celular"
-    t.string "ds_endereco"
-    t.string "ds_municipio"
-    t.integer "cd_apartamento"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "information", force: :cascade do |t|
     t.string "nm_sindico"
     t.integer "cd_sindico"
@@ -73,13 +60,6 @@ ActiveRecord::Schema.define(version: 2019_01_07_140805) do
     t.string "ds_endereco"
     t.string "ds_municipio"
     t.integer "cd_apartamento"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "papers", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

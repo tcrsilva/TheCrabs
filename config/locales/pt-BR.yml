@@ -13,6 +13,7 @@ pt-BR:
   sindico: "Síndico"
   pp: "Selecione seu tipo de perfil:"
   dados: "Insira seus dados para fazer login"
+  msg: "Mensagens"
   messages: 
     finance: "Finanças"
     menu: "Para começar, selecione uma das opções abaixo:"
@@ -22,6 +23,7 @@ pt-BR:
     calendar: "Esse é o calendário de eventos do seu prédio!"
     forstart: "Para iniciar clique no link acima!"
     sindico: "Perfil Síndico"
+   
   hello: "Olá Mundo!!"
   links:
     edit: "Editar"
@@ -30,12 +32,14 @@ pt-BR:
     new: "Novo"
     back: "Voltar"
     save: "Salvar"
+    cadastrar: "Cadastrar"
   new:
     predio: "Novo Prédio"
     finance: "Adicionar Gasto"
     evento: "Novo Evento"
     calendar: "Crie um novo evento no calendário"
     log: "Você está logado como:"
+    mor: "Novo Morador"
   editing:
     predio: "Editar prédio"
     finance: "Editar Gasto"
