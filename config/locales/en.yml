@@ -32,7 +32,11 @@ en:
     new: "New"
     back: "Back"
     save: "Save"
+<<<<<<< HEAD
     cadastrar: "Add"
+=======
+    tab: "Delete"
+>>>>>>> ef6d9b8811280732bf956daa0b3954c1fb0ee888
 
   new:
     predio: "New Bulding"
@@ -46,7 +50,11 @@ en:
     finance: "Edit Finance"
     evento: "Edit your Event!"
     profile: "Edit Profile"
+<<<<<<< HEAD
     
+=======
+    tab: "Delete"
+>>>>>>> ef6d9b8811280732bf956daa0b3954c1fb0ee888
   showing:
     predio: "Show Building"
     finance: "Show Finance"
@@ -61,6 +69,7 @@ en:
     gastos: "Outgoing"
     dsgastos: "Outgoing motive"
     valor: "Value"
+    tab: "Delete"
   back: 
     voltar: "Back"
     tab: "Delete"

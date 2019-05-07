@@ -23,7 +23,11 @@ pt-BR:
     calendar: "Esse é o calendário de eventos do seu prédio!"
     forstart: "Para iniciar clique no link acima!"
     sindico: "Perfil Síndico"
+<<<<<<< HEAD
    
+=======
+    tab: "Deletar"
+>>>>>>> ef6d9b8811280732bf956daa0b3954c1fb0ee888
   hello: "Olá Mundo!!"
   links:
     edit: "Editar"
