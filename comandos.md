@@ -1,3 +1,4 @@
+-- Git comandos
 git pull
 
 git status 
