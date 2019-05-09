@@ -49,4 +49,8 @@ https://github.com/Franzanella
 * **Juan Bertoluzzi**
 https://github.com/juanbg10
 * **Tais Silva**
+<<<<<<< HEAD
 https://github.com/tcrsilva
+=======
+https://github.com/tcrsilva
+>>>>>>> 8b7f859d7c6b12c99a011f2a48736c6e46ca3fff
