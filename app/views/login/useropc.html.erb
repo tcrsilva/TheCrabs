@@ -9,15 +9,15 @@
         <h5 style="padding: 1%"><%= t('pp') %></h5>
         <div style=" align-items: center; padding:1%; margin-right: 5%;" id="ocultar">
           <ul style="display: inline; text-decoration: none; list-style:none;"> 
-            <li style="display: inline;"><%= link_to t('sindico'), new_admin_session_path, class:"btn btn-info", :style => "padding:4%;" %></li>
-            <li  style="display: inline;"><%= link_to t('morador'), new_user_session_path, class:"btn btn-info", :style => "padding:4%;" %></li>
+            <li style="display: inline;"><%= link_to t('sindico'), new_admin_session_path, class:"btn btn-info", :style => "padding:3%;" %></li>
+            <!--<li  style="display: inline;"><= link_to t('morador'), new_user_session_path, class:"btn btn-secondary btn-lg", :style => "padding:4%; disabled" %></li>-->
             <!--<li style="display: inline;"><#%= link_to t('links.back'), destroy_admin_session_path, class:"btn btn-light",  method: :delete %></li><br>-->
           </ul>
         </div>
       
         <div style=" align-items: center; margin-right: 5%; margin-top:1%;">
             <ul style="display: inline; text-decoration: none; list-style:none;"> 
-                <li style="display: inline;"><%= link_to t('links.back'), destroy_user_session_path, class:"btn btn-danger", :style => "padding:4%;", method: :delete %></li>
+                <li style="display: inline;"><%= link_to t('links.back'), destroy_user_session_path, class:"btn btn-danger", method: :delete %></li>
                 <h2><%= current_user.try(:email) %></h2>
             </ul>
         </div>
@@ -29,9 +29,9 @@
         <br>
         <p>
             <!-- <= link_to t('predios'), predios_path, class:"btn btn-danger",:style => "padding:4%;" %> -->
-            <%= link_to t('doc'),eventos_path, class:"btn btn-danger", :style => "padding:4%;" %>
+            <%= link_to t('messages.doc'),eventos_path, class:"btn btn-danger", :style => "padding:4%;" %>
             <%= link_to t('calen'), eventos_path, class:"btn btn-success", :style => "padding:4%;" %>
-            <%= link_to t('msg'), eventos_path, class:"btn btn-secondary btn-lg", :style => "padding:4%;" %>
+            <%= link_to t('msg'), eventos_path, class:"btn btn-secondary", :style => "padding:4%;" %>
         </p>
         <p>
             <%= link_to t('finances'), finances_path, class:"btn btn-primary", :style => "padding:4%;" %> 
