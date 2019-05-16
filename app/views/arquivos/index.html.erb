@@ -1,21 +1,9 @@
-<body> 
-<div class="container" style="text-align:center;">
-    <%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
-    <h1>Página em Desenvolvimento!<!--<= link_to image_tag("mjolnir.png", :alt => "mjolnir", :class => "iconMjolnir" ), "/"  %>--></h1>
-    
-        <div style="padding:5%; ">
-            <iframe src="https://gifer.com/embed/6M8G" width="auto" height="auto" style='' frameBorder="0" allowFullScreen></iframe>
-        </div>
-        <%= link_to t('links.back'), login_useropc_path, class:"btn btn-secondary"%>
-    </div>
-    <%= link_to t('back.voltar'), login_useropc_path, class:"btn btn-secondary btn-lg"%>
-</div>
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Arquivos Anexados</h3>
   </div>
-  <div class="panel-body">
-    <table class="table table-hover">
+  <div>
+    <table>
     	<thead>
     		<tr>
     			<th>Id</th>
@@ -34,3 +22,4 @@
     </table>
   </div>
 </div>
+<%= link_to t('back.voltar'), login_useropc_path, class:"btn btn-secondary btn-lg"%>
