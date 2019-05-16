@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale
   
+  
+  # Metodo para o devise direcionar a rota (rota start alterada para o useropc depois do login)
   protected
 
   def after_sign_in_path_for(resource)
@@ -8,8 +10,6 @@ class ApplicationController < ActionController::Base
     login_useropc_path
   end
 
-  
-  
   def index
   end 
   
