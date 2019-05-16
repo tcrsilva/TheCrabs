@@ -1,10 +1,11 @@
-<body class="container" style="text-align:center;">
+<body> 
+<div class="container" style="text-align:center;">
     <%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
-    <h1>Em Construção <%= link_to image_tag("mjolnir.png", :alt => "mjolnir", :class => "iconMjolnir" ), "/"  %></h1>
-    <div style="">
+    <h1>Página em Desenvolvimento!<!--<= link_to image_tag("mjolnir.png", :alt => "mjolnir", :class => "iconMjolnir" ), "/"  %>--></h1>
+    
         <div style="padding:5%; ">
-            <iframe src="https://gifer.com/embed/6M8G" width="auto" height="auto" style='' frameBorder="0" allowFullScreen>
-            </iframe>
+            <iframe src="https://gifer.com/embed/6M8G" width="auto" height="auto" style='' frameBorder="0" allowFullScreen></iframe>
         </div>
-    </div>
+    <%= link_to t('back.voltar'), login_useropc_path, class:"btn btn-secondary btn-lg"%>
+</div>
 </body>
