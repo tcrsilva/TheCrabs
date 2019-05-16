@@ -17,7 +17,7 @@
         <div style=" align-items: center; margin-right: 5%; margin-top:1%;">
             <ul style="display: inline; text-decoration: none; list-style:none;"> 
                 <li style="display: inline;"><%= link_to t('links.back'), destroy_user_session_path, class:"btn btn-danger", method: :delete %></li>
-                <h2><%= current_user.try(:email) %></h2>
+                <!--<h2>= current_user.try(:email) %></h2>-->
             </ul>
         </div>
     <% end %>   
