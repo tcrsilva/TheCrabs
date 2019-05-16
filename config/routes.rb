@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  
-  
-  get 'aviso/index'
-  get 'arquivos/index'
-  get 'documents/upload'
+
   resources :finances
   resources :eventos
   resources :information
@@ -27,7 +23,10 @@ Rails.application.routes.draw do
   post 'auth' => "login#auth", as: "login_auth"
   get 'login/useropc'
   get 'start/home'
-  #get 'welcome/index'
+  get 'aviso/index'
+  get 'arquivos/index'
+  post 'arquivos/upload_arquivo'
+  post 'arquivos/download_arquivo'
   
   root 'start#home'
 end

@@ -9,4 +9,27 @@
         <%= link_to t('links.back'), login_useropc_path, class:"btn btn-secondary"%>
     </div>
 </div>
-</body>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Arquivos Anexados</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table table-hover">
+    	<thead>
+    		<tr>
+    			<th>Id</th>
+    			<th>Diretório</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<% @arquivos.each do |arquivo| %>
+	    		<tr>
+	    			<td><%= arquivo.id %></td>
+	    			<td><%= arquivo.diretorio_arquivo %></td>
+	    			<td><%= button_to 'Baixar', { action: :download_arquivo, diretorio: arquivo.diretorio_arquivo }, class: 'btn btn-primary' %></td>
+	    		</tr>
+	    	<% end %>
+    	</tbody>
+    </table>
+  </div>
+</div>
