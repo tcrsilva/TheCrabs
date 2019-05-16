@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   
+  get 'aviso/index'
   get 'arquivos/index'
   get 'documents/upload'
   resources :finances
