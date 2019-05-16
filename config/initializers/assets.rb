@@ -30,6 +30,7 @@ Rails.application.config.assets.precompile += %w( cable.js
                                                   finances.js 
                                                   aviso.js)
 
+
 Rails.application.config.assets.precompile += %w( predios.css
                                                   application.css
                                                   scaffolds.css
@@ -46,7 +47,7 @@ Rails.application.config.assets.precompile += %w( predios.css
                                                   finances.css
                                                   users_backoffice.css
                                                   aviso.css
-                                                  )
+                                                  arquivos.css)
 
 
 

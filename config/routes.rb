@@ -19,8 +19,6 @@ Rails.application.routes.draw do
   devise_for :admins
   devise_for :users
   
- 
-  
   get 'usuario/new'
   get 'usuario/show/:id' => "usuario#show", as: "usuario_show"
   post 'usuario/create' #post pois vai pro banco
