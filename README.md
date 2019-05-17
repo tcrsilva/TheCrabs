@@ -10,11 +10,11 @@ Ambiente de produção em máquina virtual, c9.
 É necessário ter instalado a linguagem Ruby e a framework On Rails. Portanto:
 
 ```
-Install ruby
+install ruby
 ```
 
 ```
-Install rails
+gem install rails
 ```
 
 ## Running the tests

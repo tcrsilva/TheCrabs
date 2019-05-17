@@ -1,6 +1,5 @@
-<!-- MENU PRINCIPAL -->
-
-<body class="container" style="text-align:center;">
+<body>
+<div class="container" style="text-align:center;">
 <%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
 <div style="color: #dc3c28; padding: 0 2% 1%"><h1>THE CRABS</h1></div>
     
@@ -18,7 +17,7 @@
         <div style=" align-items: center; margin-right: 5%; margin-top:1%;">
             <ul style="display: inline; text-decoration: none; list-style:none;"> 
                 <li style="display: inline;"><%= link_to t('links.back'), destroy_user_session_path, class:"btn btn-danger", method: :delete %></li>
-                <h2><%= current_user.try(:email) %></h2>
+                <!--<h2>= current_user.try(:email) %></h2>-->
             </ul>
         </div>
     <% end %>   
@@ -29,9 +28,9 @@
         <br>
         <p>
             <!-- <= link_to t('predios'), predios_path, class:"btn btn-danger",:style => "padding:3%;" %> -->
-            <%= link_to t('messages.doc'),eventos_path, class:"btn btn-danger", :style => "padding:3%;" %>
+            <%= link_to t('messages.doc'), arquivos_index_path, class:"btn btn-danger", :style => "padding:3%;" %>
             <%= link_to t('calen'), eventos_path, class:"btn btn-success", :style => "padding:3%;" %>
-            <%= link_to t('msg'), eventos_path, class:"btn btn-secondary", :style => "padding:3%;" %>
+            <%= link_to t('msg'), aviso_index_path, class:"btn btn-secondary", :style => "padding:3%;" %>
         </p>
         <p>
             <%= link_to t('finances'), finances_path, class:"btn btn-primary", :style => "padding:3%;" %> 
@@ -60,6 +59,7 @@
             </p>
         <%end%>
     <% end %>
+</div>
 </div>
 </body>
 
