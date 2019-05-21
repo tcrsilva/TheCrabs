@@ -1,5 +1,4 @@
 class Arquivo < ApplicationRecord
-
 	def self.upload_arquivo(arquivo, diretorio)
 	  FileUtils.mkdir(diretorio) unless File.exists?(diretorio)
 	  arquivo.each do |arquivo|
@@ -16,5 +15,4 @@ class Arquivo < ApplicationRecord
       end
 		end
 	end
-
 end

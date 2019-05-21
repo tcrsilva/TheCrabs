@@ -1,9 +1,9 @@
 # The Crabs
 
-Gerenciador de condomínios / Perfil do Síndico
+Gerenciador de condomínios - Perfil Síndico e Morador
 
 ## Getting Started
-Desenvolvido para a segunda avaliação da disciplina de Desenvolvimento para Servidores I pelos alunos da Fatec Santos.
+Está sendo desenvolvido para o Trabalho de Conclusão de Curso pelos alunos da Fatec Santos do curso de Sistemas para Internet.
 Ambiente de produção em máquina virtual, c9.
 
 ### Prerequisites
@@ -18,7 +18,7 @@ gem install rails
 ```
 
 ## Running the tests
-Os testes foram feitos com a gem RSpec. No terminal, usar o comando: 
+Os testes foram feitos com a framework Rspec, atualmente a mais utilizada com o rails. No terminal, usar o comando: 
 
 ```
 rake spec
@@ -38,7 +38,8 @@ heroku info -s | grep https://secret-ocean-92133.herokuapp.com | cut -d = -f2
 - Ruby
 - On Rails
 - Postgre SQL
-- HTML (Embedded Ruby)
+- HTML5 (Embedded Ruby)
+- CSS 3
 - Bootstrap
 - CoffeeScript
 - JavaScript
