@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale
+  protect_from_forgery with: :exception
   
   
   # Metodo para o devise direcionar a rota (rota start alterada para o useropc depois do login)
