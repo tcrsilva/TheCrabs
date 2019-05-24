@@ -1,43 +1,37 @@
-<body> 
 <div class="container" style="text-align:center;">
-    <%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
-    <h1>Página em Desenvolvimento!<!--<= link_to image_tag("mjolnir.png", :alt => "mjolnir", :class => "iconMjolnir" ), "/"  %>--></h1>
+    <!--<= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>-->
+    <!--<h1>Página em Desenvolvimento!<!--<= link_to image_tag("mjolnir.png", :alt => "mjolnir", :class => "iconMjolnir" ), "/"  %></h1>-->
     
-        <div style="padding:5%; ">
-            <iframe src="https://gifer.com/embed/6M8G" width="auto" height="auto" style='' frameBorder="0" allowFullScreen></iframe>
-        </div>
-        <%= link_to t('links.back'), login_useropc_path, class:"btn btn-secondary"%>
-    </div>
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Anexar</h3>
-  </div>
-  <div class="panel-body">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-		  Upload Arquivo
-		</button>
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel">Upload Arquivo</h4>
-		      </div>
-		      <div class="modal-body">
-		        <%= form_tag({ action: :upload_arquivo }, { :multipart => true }) do |f| %>
-		        	<%= file_field_tag 'arquivo[]', :multiple => true %>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-				        <%= submit_tag 'Anexar', class: "btn btn-primary", data: { disable_with: "Anexando..." } %>
-				      </div>
-		        <% end %>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-  </div>
+        <!--<div style="padding:5%; ">-->
+        <!--    <iframe src="https://gifer.com/embed/6M8G" width="auto" height="auto" style='' frameBorder="0" allowFullScreen></iframe>-->
+        <!--</div>-->
 </div>
 <div class="panel panel-primary">
+  <div class="panel-heading">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Upload Arquivo</button>
+  </div>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		 <div class="modal-dialog" role="document">
+		   <div class="modal-content">
+		     <div class="modal-header">
+		       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		     </div>
+		     <div class="modal-body">
+		       <%= form_tag({ action: :upload_arquivo }, { :multipart => true }) do |f| %>
+		        <%= file_field_tag 'arquivo[]', :multiple => true %>
+				     <div class="modal-footer">
+				       <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				       <%= submit_tag 'Anexar', class: "btn btn-primary", data: { disable_with: "Anexando..." } %>
+				     </div>
+		       <% end %>
+		     </div>
+		   </div>
+		 </div>
+	</div>
+ </div>
+</div>
+<br>
+<div class="container" style="text-align:center;">
   <div class="panel-heading">
     <h3 class="panel-title">Arquivos Anexados</h3>
   </div>
@@ -47,7 +41,7 @@
     <table class="table table-hover">
     	<thead>
     		<tr>
-    			<th>Id</th>
+    			<th>Arquivc</th>
     			<th>Diretório</th>
     		</tr>
     	</thead>
@@ -62,6 +56,5 @@
     	</tbody>
     </table>
   </div>
+    <%= link_to t('back.voltar'), login_useropc_path, class:"btn btn-secondary"%>
 </div>
-</div>
-    <%= link_to t('back.voltar'), login_useropc_path, class:"btn btn-secondary btn-lg"%>
