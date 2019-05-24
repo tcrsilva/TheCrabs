@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :perfils
   resources :finances
   resources :eventos
-  resources :information
   resources :predios
 
   namespace :users_backoffice do
