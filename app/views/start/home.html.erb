@@ -1,14 +1,16 @@
-<head><link href="views/start/start.css.erl" rel="stylesheet"></head>
-<body class="container" style="text-align:center;">
-
+<head>
+  <link href="views/start/start.css.erl" rel="stylesheet">
+</head>
+<body>
+  <div class="container" style="text-align:center;">
     <%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
 
-    <div style="color: #dc3c28; padding: 0 2% 1%"><h1>THE CRABS</h1></div>
-        <h4 style="padding: 1.5%;"><%= t('welcome') %></h4>
-        <%= link_to t('message.start'), login_useropc_path, class:"btn btn-info" %>
-        <p style="padding:2%;"><%= t('messages.forstart') %></p>
-    </div>
-    
+    <h1 style="color: #dc3c28; padding: 0 2% 1%">THE CRABS</h1>
+      <h4 style="padding: 1.5%;"><%= t('welcome') %></h4>
+      <%= link_to t('message.start'), login_useropc_path, class:"btn btn-danger", :style => "padding:4%;" %>
+      <br><br>
+      <!--<p style="padding:2%;"><#%= t('messages.forstart') %></p>-->
+ 
     <% if user_signed_in? %>
       <p>Usuário ESTÁ logado / <%= current_user.email %> </p>
     <% else %>
@@ -16,9 +18,10 @@
     <% end %>
 
     <% if admin_signed_in? %>
-      <p>Administrador ESTÁ logado / <%= current_admin.email %> </p>
+      <p>Síndico ESTÁ logado / <%= current_admin.email %> </p>
     <% else %>
-      <p>Administrador NÃO está logado</p>
+      <p>Síndico NÃO está logado</p>
     <% end %>
-    
+  </div>  
 </body>
+

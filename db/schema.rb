@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_07_140805) do
+ActiveRecord::Schema.define(version: 2019_05_17_211755) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -22,6 +22,11 @@ ActiveRecord::Schema.define(version: 2019_01_07_140805) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  end
+
+  create_table "arquivos", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "eventos", force: :cascade do |t|
@@ -64,7 +69,22 @@ ActiveRecord::Schema.define(version: 2019_01_07_140805) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "information", force: :cascade do |t|
+=======
+  create_table "perfils", force: :cascade do |t|
+    t.string "nome"
+    t.string "sobrenome"
+    t.integer "telefone"
+    t.string "img_name"
+    t.string "img_content_type"
+    t.integer "img_file_size"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "predios", force: :cascade do |t|
+>>>>>>> 699db5881d3552002773df433ae610140b3b4c6f
     t.string "nm_sindico"
     t.integer "cd_sindico"
     t.string "ds_email"
@@ -123,6 +143,10 @@ ActiveRecord::Schema.define(version: 2019_01_07_140805) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "img_file_name"
+    t.string "img_content_type"
+    t.integer "img_file_size"
+    t.datetime "img_updated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

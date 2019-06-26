@@ -1,33 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
 en:
   current_locale: "English (International)"
   welcome: "Welcome to your app!"
@@ -35,7 +5,7 @@ en:
   finances: "Finances"
   myprofile: "My profile"
   cadastrar: "Add"
-  morador: "Dweller"
+  morador: "Resident"
   morador2: "Register your new resident!"
   calen: "Calendar"
   newresident: "New Resident"
@@ -43,6 +13,7 @@ en:
   sindico: "Manager"
   pp: "Select your profile type:"
   dados: "Enter your details to sign in"
+  msg: "Messages"
   messages:
     finance: "Finance"
     menu: "To start, choose an option below:"
@@ -52,6 +23,8 @@ en:
     calendar: "This is the calendar of events for your building!"
     forstart: "To start click the link above!"
     sindico: "Manager Profile"
+    doc: "Documents"
+  
   hello: "Hello world!!"
   links:
     edit: "Edit"
@@ -60,6 +33,8 @@ en:
     new: "New"
     back: "Back"
     save: "Save"
+    tab: "Delete"
+    cadastrar: "Add"
 
   new:
     predio: "New Bulding"
@@ -67,11 +42,14 @@ en:
     evento: "New Event"
     calendar: "Create a new calendar event"
     log: "You are logged in as: "
+    mor: "New Resident"
   editing:
     predio: "Edit Bulding"
     finance: "Edit Finance"
     evento: "Edit your Event!"
     profile: "Edit Profile"
+    tab: "Delete"
+    
   showing:
     predio: "Show Building"
     finance: "Show Finance"
@@ -86,6 +64,7 @@ en:
     gastos: "Outgoing"
     dsgastos: "Outgoing motive"
     valor: "Value"
+    tab: "Delete"
   back: 
     voltar: "Back"
     tab: "Delete"

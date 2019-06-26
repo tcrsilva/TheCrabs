@@ -1,4 +1,5 @@
-<h2>Sign up</h2>
+<div class="jumbotron">
+<h2 class="display-4"><%= t('new.mor') %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -20,10 +21,11 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
-
+<br>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit t('links.cadastrar'), class:"btn btn-primary btn-lg"%>
   </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+  <% end %>
+<br>
+</div>
+<%= link_to t('back.voltar'), login_useropc_path, class:"btn btn-secondary btn-lg btn-block"%>

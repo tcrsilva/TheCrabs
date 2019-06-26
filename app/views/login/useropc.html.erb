@@ -1,56 +1,65 @@
-<body class="container" style="text-align:center;">
+<body>
+<div class="container" style="text-align:center;">
+<%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
+<div style="color: #dc3c28; padding: 0 2% 1%"><h1>THE CRABS</h1></div>
     
-    <%= link_to image_tag("crabs.png", :alt => "logo", :class => "foo" ), "/"  %>
-    
-    <div style="color: #dc3c28; padding: 0 2% 1%"><h1>THE CRABS</h1></div>
-    <!--<#%= link_to 'Morador', welcome_index_path, class:"btn btn-secondary btn-lg" %>-->
-    
-    <!--Cadastro, sair e logar do devise -->
-    <% if admin_signed_in? %>
-        <h3><%= t('new.log') %><%= current_admin.try(:email) %></h3><br>
-        <p><%= link_to t('predios'), predios_path, class:"btn btn-danger" %> <%= link_to t('calen'), eventos_path, class:"btn btn-success" %></p>
-
-        <p><%= link_to t('finances'), finances_path, class:"btn btn-primary" %> <%= link_to t('newresident'), new_profile_registration_path, class:"btn btn-warning" %>
-
-        <%= link_to t('myprofile'), information_index_path, class:"btn btn-info" %></p>
-        <br><br><br>
-        <p><%= link_to t('exit'), destroy_admin_session_path, class:"btn btn-outline-secondary", method: :delete %></p>
-        
-       <br><br><br>
-        
-    <% elsif %>
+<!-- ----------------------Cadastro Síndico, Sair e Logar do Devise---------------------------------------------------------------------- -->
+    <% if !user_signed_in? && !admin_signed_in?%> 
         <h5 style="padding: 1%"><%= t('pp') %></h5>
-        <p><%= link_to t('sindico'), new_admin_session_path, class:"btn btn-info" %></p>
-       
-     
-        <br><br>
-        <p><%= link_to t('links.back'), destroy_admin_session_path, class:"btn btn-light", method: :delete %></p><br><br><br><br><br>
-       
-    <% end %>    
+        <div style=" align-items: center; padding:1%; margin-right: 5%;" id="ocultar">
+          <ul style="display: inline; text-decoration: none; list-style:none;"> 
+            <li style="display: inline;"><%= link_to t('sindico'), new_admin_session_path, class:"btn btn-info", :style => "padding:3%;" %></li>
+            <!--<li  style="display: inline;"><= link_to t('morador'), new_user_session_path, class:"btn btn-secondary btn-lg", :style => "padding:4%; disabled" %></li>-->
+            <!--<li style="display: inline;"><#%= link_to t('links.back'), destroy_admin_session_path, class:"btn btn-light",  method: :delete %></li><br>-->
+          </ul>
+        </div>
+      
+        <div style=" align-items: center; margin-right: 5%; margin-top:1%;">
+            <ul style="display: inline; text-decoration: none; list-style:none;"> 
+                <li style="display: inline;"><%= link_to t('links.back'), destroy_user_session_path, class:"btn btn-danger", method: :delete %></li>
+                <!--<h2>= current_user.try(:email) %></h2>-->
+            </ul>
+        </div>
+    <% end %>   
     
-    <!-- IF DO MORADOR -->
-    
-     <% if user_signed_in? %>
-        <h3><%= t('new.log') %><%= current_user.try(:email) %></h3><br>
-        <p><%= link_to t('predios'), predios_path, class:"btn btn-danger" %> <%= link_to t('calen'), eventos_path, class:"btn btn-success" %></p>
-        <p><%= link_to t('finances'), finances_path, class:"btn btn-dark" %> <%= link_to t('newresident'), new_user_registration_path, class:"btn btn-warning" %>
-        <%= link_to t('myprofile'), information_index_path, class:"btn btn-info" %></p>
-        <br><br><br>
-        <p><%= link_to t('exit'), destroy_user_session_path, class:"btn btn-outline-secondary", method: :delete %></p>
+<!------------------------Cadastro Morador, Sair e Logar do Devise---------------------------------------------------------------------- -->
+    <% if admin_signed_in?%>
+        <h3><%= t('new.log') %><%= current_admin.try(:email) %></h3>
+        <br>
+        <p>
+            <!-- <= link_to t('predios'), predios_path, class:"btn btn-danger",:style => "padding:3%;" %> -->
+            <%= link_to t('messages.doc'), arquivos_index_path, class:"btn btn-danger", :style => "padding:3%;" %>
+            <%= link_to t('calen'), eventos_path, class:"btn btn-success", :style => "padding:3%;" %>
+            <%= link_to t('msg'), aviso_index_path, class:"btn btn-secondary", :style => "padding:3%;" %>
+        </p>
+        <p>
+            <%= link_to t('finances'), finances_path, class:"btn btn-primary", :style => "padding:3%;" %> 
+            <%= link_to t('newresident'), new_user_registration_path, class:"btn btn-warning", :style => "padding:3%;" %>
+            <%= link_to t('myprofile'), perfils _path, class:"btn btn-info",:style => "padding:3%;" %>
+        </p>
+        <p>
+            <%= link_to t('exit'), destroy_admin_session_path, class:"btn btn-outline-secondary", method: :delete %>
+        </p>
         
-       <br><br><br>
-        
-    <% elsif %>
-        <h5 style="padding: 1%"><%= t('pp') %></h5>
-        <p><%= link_to t('morador'), new_user_session_path, class:"btn btn-info" %></p>
-        <h2><%= current_user.try(:email) %></h2>
-        <br><br>
-        <p><%= link_to t('links.back'), destroy_user_session_path, class:"btn btn-light", method: :delete %></p><br><br><br><br><br>
-       
-    <% end %>    
-    
-    </div>
-
-    
+    <% else%>
+        <%if !admin_signed_in? && user_signed_in? %>
+            <h3><%= t('new.log') %><%= current_user.try(:email) %></h3>
+            <br>
+            <p>
+                <!--<= link_to t('predios'), predios_path, class:"btn btn-danger",:style => "padding:4%;" %> -->
+                <%= link_to t('calen'), eventos_path, class:"btn btn-success", :style => "padding:4%;" %>
+            </p>
+            <p>
+                <%= link_to t('finances'), finances_path, class:"btn btn-dark",:style => "padding:4%;" %> 
+                <%= link_to t('newresident'), new_user_registration_path, class:"btn btn-warning", :style => "padding:4%;" %>
+                <%= link_to t('myprofile'), information_index_path, class:"btn btn-info",:style => "padding:4%;" %>
+            </p>
+            <p>
+                <%= link_to t('exit'), destroy_user_session_path, class:"btn btn-outline-secondary",:style => "padding:4%;", method: :delete %>
+            </p>
+        <%end%>
+    <% end %>
+</div>
+</div>
 </body>
 

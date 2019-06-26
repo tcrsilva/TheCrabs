@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Perfils</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>Telefone</th>
+      <th>Img name</th>
+      <th>Img content type</th>
+      <th>Img file size</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @perfils.each do |perfil| %>
+      <tr>
+        <td><%= perfil.nome %></td>
+        <td><%= perfil.sobrenome %></td>
+        <td><%= perfil.telefone %></td>
+        <td><%= perfil.img_name %></td>
+        <td><%= perfil.img_content_type %></td>
+        <td><%= perfil.img_file_size %></td>
+        <td><%= link_to 'Show', perfil %></td>
+        <td><%= link_to 'Edit', edit_perfil_path(perfil) %></td>
+        <td><%= link_to 'Destroy', perfil, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Perfil', new_perfil_path %>

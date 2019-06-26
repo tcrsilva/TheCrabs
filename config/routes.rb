@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  
-  
+
+  resources :perfils
   resources :finances
   resources :eventos
-  resources :information
   resources :predios
 
   namespace :users_backoffice do
@@ -24,7 +23,10 @@ Rails.application.routes.draw do
   post 'auth' => "login#auth", as: "login_auth"
   get 'login/useropc'
   get 'start/home'
-  get 'welcome/index'
+  get 'aviso/index'
+  get 'arquivos/index'
+  post 'arquivos/upload_arquivo'
+  post 'arquivos/download_arquivo'
   
   root 'start#home'
 end
