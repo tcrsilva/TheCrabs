@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @perfil.nome %>
+</p>
+
+<p>
+  <strong>Sobrenome:</strong>
+  <%= @perfil.sobrenome %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @perfil.telefone %>
+</p>
+
+<p>
+  <strong>Img name:</strong>
+  <%= @perfil.img_name %>
+</p>
+
+<p>
+  <strong>Img content type:</strong>
+  <%= @perfil.img_content_type %>
+</p>
+
+<p>
+  <strong>Img file size:</strong>
+  <%= @perfil.img_file_size %>
+</p>
+
+<%= link_to 'Edit', edit_perfil_path(@perfil) %> |
+<%= link_to 'Back', perfils_path %>

@@ -1,0 +1,47 @@
+<%= form_with(model: perfil, local: true) do |form| %>
+  <% if perfil.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(perfil.errors.count, "error") %> prohibited this perfil from being saved:</h2>
+
+      <ul>
+      <% perfil.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sobrenome %>
+    <%= form.text_field :sobrenome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefone %>
+    <%= form.number_field :telefone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img_name %>
+    <%= form.text_field :img_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img_content_type %>
+    <%= form.text_field :img_content_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img_file_size %>
+    <%= form.number_field :img_file_size %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
