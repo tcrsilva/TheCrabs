@@ -69,22 +69,7 @@ ActiveRecord::Schema.define(version: 2019_05_17_211755) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
   create_table "information", force: :cascade do |t|
-=======
-  create_table "perfils", force: :cascade do |t|
-    t.string "nome"
-    t.string "sobrenome"
-    t.integer "telefone"
-    t.string "img_name"
-    t.string "img_content_type"
-    t.integer "img_file_size"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "predios", force: :cascade do |t|
->>>>>>> 699db5881d3552002773df433ae610140b3b4c6f
     t.string "nm_sindico"
     t.integer "cd_sindico"
     t.string "ds_email"
@@ -105,7 +90,12 @@ ActiveRecord::Schema.define(version: 2019_05_17_211755) do
   end
 
   create_table "perfils", force: :cascade do |t|
-    t.string "sindico"
+    t.string "nome"
+    t.string "sobrenome"
+    t.integer "telefone"
+    t.string "img_name"
+    t.string "img_content_type"
+    t.integer "img_file_size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

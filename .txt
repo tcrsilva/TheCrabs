@@ -11,7 +11,8 @@ git push
 
 git pull
 
-
+ rails dbconsole
+ .tables
 
 git status <br>
 git add . <br>
