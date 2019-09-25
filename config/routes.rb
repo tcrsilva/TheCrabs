@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get 'login/useropc'
   get 'start/home'
   get 'aviso/index'
+  
   get 'arquivos/index'
   post 'arquivos/upload_arquivo'
   post 'arquivos/download_arquivo'
