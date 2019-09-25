@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   resources :perfils
   resources :finances
   resources :eventos
@@ -23,10 +24,14 @@ Rails.application.routes.draw do
   post 'auth' => "login#auth", as: "login_auth"
   get 'login/useropc'
   get 'start/home'
-  get 'aviso/index'
+  get 'chats/show'
   get 'arquivos/index'
   post 'arquivos/upload_arquivo'
   post 'arquivos/download_arquivo'
   
-  root 'start#home'
+ root 'start#home'
+ 
+
+ mount ActionCable.server => '/cable' 
+ 
 end

@@ -1,0 +1,14 @@
+<div align="center" class="container">
+  <h1 class="title">Bate Papo</h1>
+  <div id="message">
+    <%= render @messages %>
+  </div>
+ 
+  <form>
+    <input type="text" data-behavior="chat_speaker" placeholder=" Diga alguma coisa :) ">
+  </form>
+  
+  <br><br>
+  <%= link_to t('back.voltar'), login_useropc_path, class:"btn btn-secondary btn-lg btn-block"%>
+  
+</div>
