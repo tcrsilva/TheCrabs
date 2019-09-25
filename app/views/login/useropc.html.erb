@@ -24,7 +24,7 @@
     
 <!------------------------Cadastro Morador, Sair e Logar do Devise---------------------------------------------------------------------- -->
     <% if admin_signed_in?%>
-        <h3><%= t('new.log') %><%= current_admin.try(:email) %></h3>
+        <h3> <%= t('new.log') %><%= current_admin.try(:email) %></h3>
         <br>
         <p>
             <!-- <= link_to t('predios'), predios_path, class:"btn btn-danger",:style => "padding:3%;" %> -->
@@ -35,7 +35,11 @@
         <p>
             <%= link_to t('finances'), finances_path, class:"btn btn-primary", :style => "padding:3%;" %> 
             <%= link_to t('newresident'), new_user_registration_path, class:"btn btn-warning", :style => "padding:3%;" %>
+<<<<<<< HEAD
             <%= link_to t('myprofile'), perfils_path, class:"btn btn-info",:style => "padding:3%;" %>
+=======
+            <!--<= link_to t('myprofile'), perfils _path, class:"btn btn-info",:style => "padding:3%;" %>-->
+>>>>>>> 598fd8fa8c8e538733d84ba6cf76579115ff1b15
         </p>
         <p>
             <%= link_to t('exit'), destroy_admin_session_path, class:"btn btn-outline-secondary", method: :delete %>

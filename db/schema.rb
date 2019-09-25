@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 2019_08_28_170258) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "messages", force: :cascade do |t|
     t.text "content"
     t.datetime "created_at", null: false
@@ -80,6 +81,40 @@ ActiveRecord::Schema.define(version: 2019_08_28_170258) do
   create_table "predios", force: :cascade do |t|
     t.string "nm_sindico"
     t.integer "cd_sindico"
+=======
+  create_table "information", force: :cascade do |t|
+    t.string "nm_sindico"
+    t.integer "cd_sindico"
+    t.string "ds_email"
+    t.integer "cd_telefone"
+    t.integer "cd_celular"
+    t.string "ds_endereco"
+    t.string "ds_municipio"
+    t.integer "cd_apartamento"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "papers", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "perfils", force: :cascade do |t|
+    t.string "nome"
+    t.string "sobrenome"
+    t.integer "telefone"
+    t.string "img_name"
+    t.string "img_content_type"
+    t.integer "img_file_size"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "predios", force: :cascade do |t|
+>>>>>>> 598fd8fa8c8e538733d84ba6cf76579115ff1b15
     t.string "nm_predio"
     t.integer "cd_numero"
     t.integer "cd_bloco"

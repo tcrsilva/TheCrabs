@@ -28,10 +28,12 @@
 
   <!--<div class="actions">-->
     <!-- f.submit "Log in", class:"btn btn-success" %> -->
-      <%=  button_to 'Log in' , login_useropc_path, class:"btn btn-success" %>
+      <%=  button_to 'Log in' , login_useropc_path, class:"btn btn-success" %><br />
+      <%= render "admins/shared/links" %><br />
+      <%= link_to "Back",  login_useropc_path %>
     
   </div>
 <% end %>
 <br>
-<%= render "admins/shared/links" %>
+
 </div>
